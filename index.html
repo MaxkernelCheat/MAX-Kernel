@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Max Kernel Cheat - Kernel-level Android Gaming</title>
-    <meta name="description" content="Max Kernel Cheat – Kernel-level Android, ổn định, bảo mật, hỗ trợ chuyên nghiệp">
-    <meta name="keywords" content="Max Kernel Cheat, cheat Android, kernel cheat, PUBG Mobile, game hack">
+    <title>MAX KERNEL CHEAT ® | Giải Pháp Kernel Cao Cấp Cho Android</title>
+    <meta name="description" content="Max Kernel Cheat - Giải pháp kernel-level cao cấp nhất cho Android gaming. Hiệu suất vượt trội, bảo mật tuyệt đối.">
+    <meta name="keywords" content="Max Kernel Cheat, Android Kernel, Premium Cheat, Gaming Solution, PUBG Mobile, Kernel Hack">
     
     <!-- Favicon -->
     <link rel="icon" href="logo.png" type="image/png">
     
     <!-- Fonts & Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Styles -->
@@ -23,27 +23,56 @@
             theme: {
                 extend: {
                     colors: {
-                        dark: '#0B0B0B',
-                        dark2: '#111111',
-                        card: '#141414',
-                        gold: '#F5C542',
-                        red: '#E53935',
+                        dark: '#050505',
+                        dark2: '#0A0A0A',
+                        card: '#121212',
+                        premium: '#1A1A1A',
+                        gold: '#FFD700',
+                        gold2: '#FFC107',
+                        neon: '#00FFAA',
+                        red: '#FF2E2E',
+                        purple: '#9D4EDD',
                         text: '#FFFFFF',
-                        textSub: '#9CA3AF'
+                        textSub: '#B0B0B0'
                     },
                     animation: {
                         'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
-                        'float': 'float 3s ease-in-out infinite'
+                        'float': 'float 3s ease-in-out infinite',
+                        'shine': 'shine 3s ease-in-out infinite',
+                        'border-glow': 'border-glow 2s ease-in-out infinite',
+                        'neon': 'neon 1.5s ease-in-out infinite alternate',
+                        'gradient': 'gradient 8s ease infinite'
                     },
                     keyframes: {
                         'pulse-glow': {
-                            '0%, 100%': { 'box-shadow': '0 0 20px rgba(245, 197, 66, 0.5)' },
-                            '50%': { 'box-shadow': '0 0 40px rgba(245, 197, 66, 0.8)' }
+                            '0%, 100%': { 'box-shadow': '0 0 25px rgba(255, 215, 0, 0.4)' },
+                            '50%': { 'box-shadow': '0 0 45px rgba(255, 215, 0, 0.8)' }
                         },
                         'float': {
                             '0%, 100%': { transform: 'translateY(0)' },
-                            '50%': { transform: 'translateY(-10px)' }
+                            '50%': { transform: 'translateY(-15px)' }
+                        },
+                        'shine': {
+                            '0%': { 'background-position': '200% center' },
+                            '100%': { 'background-position': '-200% center' }
+                        },
+                        'border-glow': {
+                            '0%, 100%': { 'border-color': 'rgba(255, 215, 0, 0.3)' },
+                            '50%': { 'border-color': 'rgba(255, 215, 0, 0.8)' }
+                        },
+                        'neon': {
+                            'from': { 'text-shadow': '0 0 10px #fff, 0 0 20px #fff, 0 0 30px #FFD700, 0 0 40px #FFD700' },
+                            'to': { 'text-shadow': '0 0 5px #fff, 0 0 10px #fff, 0 0 15px #FFD700, 0 0 20px #FFD700' }
+                        },
+                        'gradient': {
+                            '0%, 100%': { 'background-position': '0% 50%' },
+                            '50%': { 'background-position': '100% 50%' }
                         }
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                        'gradient-premium': 'linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 50%, #0A0A0A 100%)',
+                        'gradient-gold': 'linear-gradient(90deg, #FFD700 0%, #FFC107 100%)'
                     }
                 }
             }
@@ -59,26 +88,54 @@
         
         body {
             font-family: 'Inter', sans-serif;
-            background: #0B0B0B;
+            background: #050505;
             color: #FFFFFF;
             overflow-x: hidden;
+            scroll-behavior: smooth;
         }
         
-        .gradient-bg {
-            background: linear-gradient(135deg, #0B0B0B 0%, #1a1a1a 100%);
+        .premium-bg {
+            background: linear-gradient(135deg, #050505 0%, #0A0A0A 50%, #050505 100%);
         }
         
-        .card-gradient {
-            background: linear-gradient(145deg, #161616, #0b0b0b);
-            border: 1px solid rgba(255, 255, 255, 0.05);
+        .vip-card {
+            background: linear-gradient(145deg, #1A1A1A, #0F0F0F);
+            border: 1px solid rgba(255, 215, 0, 0.1);
+            position: relative;
+            overflow: hidden;
         }
         
-        .glow {
-            box-shadow: 0 0 30px rgba(245, 197, 66, 0.35);
+        .vip-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #FFD700, transparent);
+        }
+        
+        .gold-glow {
+            box-shadow: 0 0 40px rgba(255, 215, 0, 0.3);
+        }
+        
+        .neon-glow {
+            box-shadow: 0 0 30px rgba(0, 255, 170, 0.3);
+        }
+        
+        .red-glow {
+            box-shadow: 0 0 30px rgba(255, 46, 46, 0.3);
         }
         
         .section-padding {
-            padding: 80px 0;
+            padding: 100px 0;
+        }
+        
+        .noise-bg {
+            background-image: 
+                radial-gradient(circle at 20% 80%, rgba(255, 215, 0, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(0, 255, 170, 0.03) 0%, transparent 50%);
+            position: relative;
         }
         
         .noise-bg::before {
@@ -88,201 +145,331 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.1'/%3E%3C/svg%3E");
-            opacity: 0.03;
-            z-index: -1;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+            opacity: 0.3;
+            z-index: 1;
+            pointer-events: none;
         }
         
         /* Custom Scrollbar */
         ::-webkit-scrollbar {
-            width: 10px;
+            width: 12px;
         }
         
         ::-webkit-scrollbar-track {
-            background: #111111;
+            background: #0A0A0A;
+            border-left: 1px solid rgba(255, 215, 0, 0.1);
         }
         
         ::-webkit-scrollbar-thumb {
-            background: #F5C542;
-            border-radius: 5px;
+            background: linear-gradient(180deg, #FFD700, #FFC107);
+            border-radius: 6px;
+            border: 2px solid #0A0A0A;
         }
         
-        ::-webkit-scrollbar-thumb:hover {
-            background: #d4ac34;
+        /* Logo Animation */
+        .logo-container {
+            position: relative;
+            border-radius: 50%;
+            padding: 3px;
+            background: linear-gradient(45deg, #FFD700, #FFC107, #FFD700);
+            background-size: 200% 200%;
+            animation: gradient 3s ease infinite;
         }
         
-        /* Logo Styles */
-        .logo-image {
-            border: 2px solid rgba(245, 197, 66, 0.3);
+        /* Gradient Text */
+        .gradient-text {
+            background: linear-gradient(90deg, #FFD700 0%, #FFC107 50%, #FFD700 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% auto;
+            animation: shine 3s ease-in-out infinite;
+        }
+        
+        .neon-text {
+            color: #00FFAA;
+            text-shadow: 0 0 10px rgba(0, 255, 170, 0.5);
+        }
+        
+        /* Button Effects */
+        .vip-button {
+            background: linear-gradient(90deg, #FFD700 0%, #FFC107 100%);
+            color: #000;
+            font-weight: 700;
+            position: relative;
+            overflow: hidden;
             transition: all 0.3s ease;
         }
         
-        .logo-image:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 30px rgba(245, 197, 66, 0.4);
+        .vip-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
         }
         
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .premium-button {
+            background: linear-gradient(90deg, #00FFAA 0%, #9D4EDD 100%);
+            color: #000;
+            font-weight: 700;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
         }
         
-        .fade-in-up {
-            animation: fadeInUp 0.8s ease-out;
+        .premium-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 255, 170, 0.4);
+        }
+        
+        /* Stats Counter */
+        .counter {
+            font-weight: 900;
+            font-size: 3rem;
+            background: linear-gradient(90deg, #FFD700, #FFC107);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .section-padding {
+                padding: 60px 0;
+            }
+            
+            .counter {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
 
-<body class="gradient-bg">
+<body class="premium-bg">
     <!-- Header -->
-    <header id="header" class="fixed top-0 w-full z-50 bg-dark/90 backdrop-blur-md border-b border-white/5 transition-all duration-300">
+    <header id="header" class="fixed top-0 w-full z-50 bg-dark/95 backdrop-blur-lg border-b border-gold/10 transition-all duration-500">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-4">
+            <div class="flex justify-between items-center py-5">
                 <!-- Logo -->
-                <div class="flex items-center gap-3">
-                    <img src="logo.png" 
-                         alt="Max Kernel Cheat Logo" 
-                         class="w-12 h-12 rounded-full logo-image object-cover glow">
+                <div class="flex items-center gap-4">
+                    <div class="logo-container">
+                        <img src="logo.png" 
+                             alt="MAX KERNEL CHEAT Logo" 
+                             class="w-14 h-14 rounded-full object-cover">
+                    </div>
                     <div>
-                        <h1 class="font-bold text-xl tracking-wide">MAX KERNEL CHEAT</h1>
-                        <p class="text-xs text-textSub">Kernel-Level Performance</p>
+                        <h1 class="font-black text-2xl tracking-tighter gradient-text">
+                            MAX KERNEL CHEAT
+                        </h1>
+                        <p class="text-xs text-textSub font-medium">GIẢI PHÁP KERNEL CAO CẤP</p>
                     </div>
                 </div>
                 
                 <!-- Navigation -->
-                <nav class="hidden md:flex items-center gap-8">
-                    <a href="#home" class="text-textSub hover:text-gold transition-colors duration-300">Trang chủ</a>
-                    <a href="#features" class="text-textSub hover:text-gold transition-colors duration-300">Tính năng</a>
-                    <a href="#pricing" class="text-textSub hover:text-gold transition-colors duration-300">Bảng giá</a>
-                    <a href="#support" class="text-textSub hover:text-gold transition-colors duration-300">Hỗ trợ</a>
+                <nav class="hidden lg:flex items-center gap-10">
+                    <a href="#home" class="group relative text-textSub hover:text-gold transition-all duration-300 font-medium">
+                        <span class="relative z-10">TRANG CHỦ</span>
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gold group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                    <a href="#features" class="group relative text-textSub hover:text-gold transition-all duration-300 font-medium">
+                        <span class="relative z-10">TÍNH NĂNG</span>
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gold group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                    <a href="#warning" class="group relative text-textSub hover:text-gold transition-all duration-300 font-medium">
+                        <span class="relative z-10">CẢNH BÁO</span>
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gold group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                    <a href="#pricing" class="group relative text-textSub hover:text-gold transition-all duration-300 font-medium">
+                        <span class="relative z-10">BẢNG GIÁ</span>
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gold group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                    <a href="#support" class="group relative text-textSub hover:text-gold transition-all duration-300 font-medium">
+                        <span class="relative z-10">HỖ TRỢ</span>
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gold group-hover:w-full transition-all duration-300"></span>
+                    </a>
                 </nav>
                 
-                <!-- Download Button -->
-                <a href="https://t.me/maxkernelHVC/136" 
-                   class="px-6 py-2.5 bg-red rounded-full font-semibold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-red/30">
-                    Tải xuống
-                </a>
-                
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden text-2xl">
-                    <i class="fas fa-bars"></i>
-                </button>
+                <!-- CTA Button -->
+                <div class="flex items-center gap-6">
+                    <a href="https://t.me/chien137" 
+                       target="_blank"
+                       class="hidden lg:flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple/20 to-neon/20 border border-purple/30 rounded-xl hover:border-gold/50 transition-all duration-300 group">
+                        <i class="fas fa-headset text-gold"></i>
+                        <span class="font-bold">HỖ TRỢ VIP</span>
+                    </a>
+                    <a href="https://t.me/maxkernelHVC/136" 
+                       target="_blank"
+                       class="vip-button px-8 py-3 rounded-xl font-black text-sm">
+                        <i class="fas fa-download mr-2"></i>TẢI XUỐNG
+                    </a>
+                    
+                    <!-- Mobile Menu -->
+                    <button id="mobile-menu-btn" class="lg:hidden text-2xl text-gold">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
             </div>
         </div>
         
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden hidden bg-dark2 border-t border-white/5 py-4">
-            <div class="container mx-auto px-4 flex flex-col gap-4">
-                <a href="#home" class="py-2 text-textSub hover:text-gold transition-colors">Trang chủ</a>
-                <a href="#features" class="py-2 text-textSub hover:text-gold transition-colors">Tính năng</a>
-                <a href="#pricing" class="py-2 text-textSub hover:text-gold transition-colors">Bảng giá</a>
-                <a href="#support" class="py-2 text-textSub hover:text-gold transition-colors">Hỗ trợ</a>
+        <div id="mobile-menu" class="lg:hidden hidden bg-premium border-t border-gold/10">
+            <div class="container mx-auto px-4 py-8">
+                <div class="flex flex-col gap-6">
+                    <a href="#home" class="flex items-center gap-3 text-gold font-bold py-3 border-b border-gold/10">
+                        <i class="fas fa-home"></i>
+                        TRANG CHỦ
+                    </a>
+                    <a href="#features" class="flex items-center gap-3 text-text hover:text-gold transition-colors py-3 border-b border-white/5">
+                        <i class="fas fa-star"></i>
+                        TÍNH NĂNG
+                    </a>
+                    <a href="#warning" class="flex items-center gap-3 text-text hover:text-gold transition-colors py-3 border-b border-white/5">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        CẢNH BÁO
+                    </a>
+                    <a href="#pricing" class="flex items-center gap-3 text-text hover:text-gold transition-colors py-3 border-b border-white/5">
+                        <i class="fas fa-tags"></i>
+                        BẢNG GIÁ
+                    </a>
+                    <a href="#support" class="flex items-center gap-3 text-text hover:text-gold transition-colors py-3 border-b border-white/5">
+                        <i class="fas fa-headset"></i>
+                        HỖ TRỢ
+                    </a>
+                    <a href="https://t.me/chien137" 
+                       target="_blank"
+                       class="premium-button mt-4 py-4 rounded-xl text-center font-bold">
+                        <i class="fas fa-headset mr-2"></i>HỖ TRỢ VIP
+                    </a>
+                </div>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="relative noise-bg pt-32 pb-20 overflow-hidden">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
+    <section id="home" class="relative noise-bg pt-40 pb-32 overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-0 left-0 w-full h-full">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-gold/5 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple/5 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <!-- Left Content -->
-                <div class="fade-in-up" data-aos="fade-right">
-                    <div class="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-gold/10 text-gold rounded-full border border-gold/20">
-                        <i class="fas fa-shield-alt"></i>
-                        <span class="text-sm font-medium">Dành Riêng Cho Android Root - An Toàn Cao</span>
+                <div data-aos="fade-right" data-aos-delay="200">
+                    <div class="inline-flex items-center gap-3 mb-8 px-6 py-3 bg-gradient-to-r from-gold/10 to-gold2/10 border border-gold/20 rounded-2xl backdrop-blur-sm">
+                        <div class="w-3 h-3 rounded-full bg-neon animate-pulse"></div>
+                        <span class="text-gold font-bold tracking-widest text-sm">GIẢI PHÁP KERNEL CAO CẤP</span>
                     </div>
                     
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-                        Cùng <span class="text-gold">Max Kernel Cheat</span> 
-                        <span class="block mt-2">Nâng Tầm Cuộc Chơi</span>
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-8">
+                        <span class="gradient-text">MAX KERNEL</span>
+                        <span class="block mt-4 neon-text">GIẢI PHÁP TỐI ƯU</span>
                     </h1>
                     
-                    <p class="text-textSub text-lg mb-8 max-w-xl">
-                        Công Nghệ Kernel Cho Android Đã Root, Ưu Tiên Hiệu Xuất, Ổn Định Và Bảo Mật. 
-                        Trải nghiệm gaming đỉnh cao với công nghệ chống phát hiện hàng đầu.
+                    <p class="text-xl text-textSub mb-10 max-w-xl leading-relaxed">
+                        Trải nghiệm hiệu suất gaming đỉnh cao với công nghệ <span class="text-gold font-bold">kernel-level</span>. 
+                        Ổn định tuyệt đối, không bị phát hiện, và hỗ trợ premium 24/7.
                     </p>
                     
-                    <div class="flex flex-wrap gap-4 mb-8">
+                    <div class="flex flex-wrap gap-6 mb-12">
                         <a href="#pricing" 
-                           class="px-8 py-3.5 bg-gold text-dark font-bold rounded-xl hover:scale-105 transition-transform duration-300 shadow-lg">
-                            <i class="fas fa-tags mr-2"></i>Xem bảng giá
+                           class="vip-button px-10 py-4 rounded-xl text-lg font-black">
+                            <i class="fas fa-gem mr-3"></i>MUA NGAY
                         </a>
-                        <a href="https://t.me/chien137" 
-                           class="px-8 py-3.5 border border-white/20 rounded-xl font-semibold hover:bg-white/5 transition-colors duration-300">
-                            <i class="fas fa-headset mr-2"></i>Liên hệ Support
+                        <a href="https://www.youtube.com/watch?v=ZqLqt2FuwSE" 
+                           target="_blank"
+                           class="premium-button px-10 py-4 rounded-xl text-lg font-black">
+                            <i class="fas fa-play-circle mr-3"></i>XEM DEMO
                         </a>
                     </div>
                     
-                    <div class="flex flex-wrap gap-6 text-sm">
-                        <div class="flex items-center gap-2">
-                            <div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
-                            <span class="text-textSub">YÊU CẦU ROOT</span>
+                    <!-- Stats -->
+                    <div class="grid grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="counter mb-2">10K+</div>
+                            <p class="text-textSub text-sm font-medium">NGƯỜI DÙNG</p>
                         </div>
-                        <div class="flex items-center gap-2">
-                            <div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
-                            <span class="text-textSub">Hỗ TRỢ KERNEL 5.10 - 6.6</span>
+                        <div class="text-center">
+                            <div class="counter mb-2">99.9%</div>
+                            <p class="text-textSub text-sm font-medium">ỔN ĐỊNH</p>
                         </div>
-                        <div class="flex items-center gap-2">
-                            <div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
-                            <span class="text-textSub">Mượt & Dễ Sử Dụng Cho Người Mới</span>
+                        <div class="text-center">
+                            <div class="counter mb-2">24/7</div>
+                            <p class="text-textSub text-sm font-medium">HỖ TRỢ</p>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Right Content - Dealers -->
-                <div class="fade-in-up" data-aos="fade-left">
-                    <div class="card-gradient rounded-2xl p-8 shadow-2xl">
-                        <div class="flex items-center gap-3 mb-6">
-                            <img src="logo.png" alt="Logo" class="w-10 h-10 rounded-full object-cover">
-                            <h3 class="text-xl font-bold">Dealer Ủy Quyền Chính Thức</h3>
+                <div data-aos="fade-left" data-aos-delay="400">
+                    <div class="vip-card rounded-3xl p-10 gold-glow relative">
+                        <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                            <div class="px-6 py-2 bg-gradient-to-r from-gold to-gold2 rounded-full">
+                                <span class="font-black text-dark text-sm">DEALER CHÍNH THỨC</span>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center mb-10">
+                            <div class="w-20 h-20 mx-auto mb-6 logo-container">
+                                <img src="logo.png" alt="Logo" class="w-full h-full rounded-full object-cover">
+                            </div>
+                            <h3 class="text-2xl font-black mb-2">ĐẠI LÝ ỦY QUYỀN</h3>
+                            <p class="text-textSub">Liên hệ chính thức để mua hàng</p>
                         </div>
                         
                         <!-- Dealer 1 -->
-                        <div class="bg-white/5 rounded-xl p-6 mb-4 hover:bg-white/10 transition-colors duration-300 border border-white/5">
+                        <div class="bg-gradient-to-r from-premium to-card rounded-2xl p-6 mb-6 border border-gold/10 hover:border-gold/30 transition-all duration-300">
                             <div class="flex justify-between items-center">
-                                <div>
-                                    <h4 class="font-bold text-lg">Dealer Dkey</h4>
-                                    <p class="text-textSub text-sm mt-1">@mdkeyy</p>
-                                    <div class="flex items-center gap-2 mt-3">
-                                        <span class="text-xs px-2 py-1 bg-gold/20 text-gold rounded">Chính thức</span>
-                                        <span class="text-xs px-2 py-1 bg-blue-500/20 text-blue-300 rounded">Online</span>
+                                <div class="flex items-center gap-4">
+                                    <div class="w-14 h-14 rounded-full bg-gradient-to-br from-gold to-gold2 p-0.5">
+                                        <div class="w-full h-full rounded-full bg-dark flex items-center justify-center">
+                                            <i class="fas fa-user-shield text-gold text-xl"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-lg">DEALER DKEY</h4>
+                                        <p class="text-textSub text-sm">@mdkeyy</p>
+                                        <div class="flex gap-2 mt-2">
+                                            <span class="px-2 py-1 bg-gold/20 text-gold text-xs rounded">CHÍNH THỨC</span>
+                                            <span class="px-2 py-1 bg-neon/20 text-neon text-xs rounded">ONLINE</span>
+                                        </div>
                                     </div>
                                 </div>
                                 <a href="https://t.me/mdkeyy" 
-                                   class="px-5 py-2.5 bg-gold text-dark font-semibold rounded-lg hover:scale-105 transition-transform duration-300">
-                                    Liên hệ
+                                   target="_blank"
+                                   class="vip-button px-6 py-3 rounded-lg text-sm font-bold">
+                                    LIÊN HỆ
                                 </a>
                             </div>
                         </div>
                         
                         <!-- Dealer 2 -->
-                        <div class="bg-white/5 rounded-xl p-6 hover:bg-white/10 transition-colors duration-300 border border-white/5">
+                        <div class="bg-gradient-to-r from-premium to-card rounded-2xl p-6 border border-gold/10 hover:border-gold/30 transition-all duration-300">
                             <div class="flex justify-between items-center">
-                                <div>
-                                    <h4 class="font-bold text-lg">Dealer HVC</h4>
-                                    <p class="text-textSub text-sm mt-1">@chien137</p>
-                                    <div class="flex items-center gap-2 mt-3">
-                                        <span class="text-xs px-2 py-1 bg-gold/20 text-gold rounded">Chính thức</span>
-                                        <span class="text-xs px-2 py-1 bg-green-500/20 text-green-300 rounded">Support 24/7</span>
+                                <div class="flex items-center gap-4">
+                                    <div class="w-14 h-14 rounded-full bg-gradient-to-br from-purple to-neon p-0.5">
+                                        <div class="w-full h-full rounded-full bg-dark flex items-center justify-center">
+                                            <i class="fas fa-headset text-purple text-xl"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-lg">DEALER HVC</h4>
+                                        <p class="text-textSub text-sm">@chien137</p>
+                                        <div class="flex gap-2 mt-2">
+                                            <span class="px-2 py-1 bg-gold/20 text-gold text-xs rounded">CHÍNH THỨC</span>
+                                            <span class="px-2 py-1 bg-purple/20 text-purple text-xs rounded">HỖ TRỢ 24/7</span>
+                                        </div>
                                     </div>
                                 </div>
                                 <a href="https://t.me/chien137" 
-                                   class="px-5 py-2.5 bg-gold text-dark font-semibold rounded-lg hover:scale-105 transition-transform duration-300">
-                                    Liên hệ
+                                   target="_blank"
+                                   class="premium-button px-6 py-3 rounded-lg text-sm font-bold">
+                                    LIÊN HỆ
                                 </a>
                             </div>
                         </div>
                         
-                        <div class="mt-6 pt-6 border-t border-white/10">
-                            <p class="text-textSub text-sm text-center">
-                                <i class="fas fa-info-circle text-gold mr-1"></i>
+                        <div class="mt-10 pt-6 border-t border-gold/10 text-center">
+                            <p class="text-textSub text-sm">
+                                <i class="fas fa-shield-alt text-gold mr-2"></i>
                                 Chỉ mua hàng từ các dealer chính thức để đảm bảo an toàn
                             </p>
                         </div>
@@ -290,529 +477,449 @@
                 </div>
             </div>
         </div>
-        
-        <!-- Decorative Elements -->
-        <div class="absolute top-10 right-10 w-72 h-72 bg-gold/5 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-20 left-10 w-96 h-96 bg-red/5 rounded-full blur-3xl"></div>
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="section-padding bg-dark2">
+    <section id="features" class="section-padding bg-gradient-to-b from-dark to-premium">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
-            <div class="text-center mb-16" data-aos="fade-up">
-                <div class="flex justify-center items-center gap-3 mb-4">
-                    <img src="logo.png" alt="Logo" class="w-10 h-10 rounded-full object-cover">
-                    <span class="inline-block px-4 py-1.5 bg-gold/10 text-gold rounded-full text-sm font-medium">
-                        <i class="fas fa-star mr-2"></i>CHI TIẾT TÍNH NĂNG NỔI BẬT
-                    </span>
+            <div class="text-center mb-20" data-aos="fade-up">
+                <div class="inline-flex items-center gap-3 mb-6 px-6 py-3 bg-gradient-to-r from-gold/10 to-purple/10 border border-gold/20 rounded-2xl">
+                    <i class="fas fa-crown text-gold"></i>
+                    <span class="text-gold font-bold tracking-widest">TÍNH NĂNG CAO CẤP</span>
                 </div>
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">
-                    Max Kernel Cheat 
-                    <span class="text-gold">Độc Quyền</span>
+                <h2 class="text-5xl md:text-6xl font-black mb-6">
+                    <span class="gradient-text">CÔNG NGHỆ</span>
+                    <span class="neon-text block">ĐỘC QUYỀN</span>
                 </h2>
-                <p class="text-textSub max-w-2xl mx-auto">
-                    Công nghệ kernel-level mang đến trải nghiệm gaming mượt mà với khả năng chống phát hiện vượt trội
+                <p class="text-xl text-textSub max-w-3xl mx-auto">
+                    Sức mạnh công nghệ kernel-level mang lại lợi thế tối đa trong gaming
                 </p>
             </div>
             
             <!-- Features Grid -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Feature 1 -->
-                <div class="card-gradient rounded-2xl p-8 hover:transform hover:-translate-y-2 transition-all duration-300" data-aos="zoom-in">
-                    <div class="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mb-6">
-                        <i class="fas fa-microchip text-2xl text-gold"></i>
+                <div class="vip-card rounded-3xl p-8" data-aos="zoom-in">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-gold to-gold2 flex items-center justify-center mb-6">
+                        <i class="fas fa-microchip text-2xl text-dark"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Cấp độ Kernel</h3>
-                    <p class="text-textSub mb-4">
-                        Không can thiệp game gốc – ổn định cao. Hoạt động ở mức độ sâu nhất của hệ thống.
+                    <h3 class="text-2xl font-black mb-4">CẤP ĐỘ KERNEL</h3>
+                    <p class="text-textSub mb-6">
+                        Hoạt động ở mức độ sâu nhất của hệ thống, không can thiệp game gốc
                     </p>
-                    <div class="flex items-center text-gold text-sm">
+                    <div class="flex items-center text-gold font-bold">
                         <i class="fas fa-check-circle mr-2"></i>
-                        <span>Chống phát hiện tối đa</span>
+                        <span>KHÔNG BỊ PHÁT HIỆN</span>
                     </div>
                 </div>
                 
                 <!-- Feature 2 -->
-                <div class="card-gradient rounded-2xl p-8 hover:transform hover:-translate-y-2 transition-all duration-300" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mb-6">
-                        <i class="fas fa-shield-alt text-2xl text-gold"></i>
+                <div class="vip-card rounded-3xl p-8" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-neon to-purple flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-2xl text-dark"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Vượt Qua Anti-Cheat</h3>
-                    <p class="text-textSub mb-4">
-                        Hoạt Động Trong Môi Trường Kernel, vượt qua tất cả hệ thống chống gian lận hiện tại.
+                    <h3 class="text-2xl font-black mb-4">VƯỢT ANTI-CHEAT</h3>
+                    <p class="text-textSub mb-6">
+                        Hệ thống chống phát hiện tiên tiến, vượt qua mọi hệ thống anti-cheat
                     </p>
-                    <div class="flex items-center text-gold text-sm">
+                    <div class="flex items-center text-neon font-bold">
                         <i class="fas fa-check-circle mr-2"></i>
-                        <span>Bypass toàn diện</span>
+                        <span>AN TOÀN TUYỆT ĐỐI</span>
                     </div>
                 </div>
                 
                 <!-- Feature 3 -->
-                <div class="card-gradient rounded-2xl p-8 hover:transform hover:-translate-y-2 transition-all duration-300" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mb-6">
-                        <i class="fas fa-bolt text-2xl text-gold"></i>
+                <div class="vip-card rounded-3xl p-8" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple to-neon flex items-center justify-center mb-6">
+                        <i class="fas fa-bolt text-2xl text-dark"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Bảo vệ thời gian thực</h3>
-                    <p class="text-textSub mb-4">
-                        Chạy Ngầm Và Không Tốn CPU, đảm bảo hiệu suất game không bị ảnh hưởng.
+                    <h3 class="text-2xl font-black mb-4">TỐI ƯU HIỆU SUẤT</h3>
+                    <p class="text-textSub mb-6">
+                        Không ảnh hưởng đến hiệu suất hệ thống, hoạt động mượt mà
                     </p>
-                    <div class="flex items-center text-gold text-sm">
+                    <div class="flex items-center text-purple font-bold">
                         <i class="fas fa-check-circle mr-2"></i>
-                        <span>Tiết kiệm pin</span>
+                        <span>KHÔNG GIẬT LAG</span>
                     </div>
                 </div>
                 
                 <!-- Feature 4 -->
-                <div class="card-gradient rounded-2xl p-8 hover:transform hover:-translate-y-2 transition-all duration-300" data-aos="zoom-in">
-                    <div class="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mb-6">
-                        <i class="fas fa-mobile-alt text-2xl text-gold"></i>
+                <div class="vip-card rounded-3xl p-8" data-aos="zoom-in">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-gold2 to-gold flex items-center justify-center mb-6">
+                        <i class="fas fa-crosshairs text-2xl text-dark"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Tương thích thiết bị</h3>
-                    <p class="text-textSub mb-4">
-                        Hỗ trợ nhiều dòng Android từ các hãng khác nhau với kernel 5.10 - 6.6.
+                    <h3 class="text-2xl font-black mb-4">AIMBOT THÔNG MINH</h3>
+                    <p class="text-textSub mb-6">
+                        Hỗ trợ ngắm bắn tự nhiên, không bị phát hiện bởi hệ thống
                     </p>
-                    <div class="flex items-center text-gold text-sm">
+                    <div class="flex items-center text-gold2 font-bold">
                         <i class="fas fa-check-circle mr-2"></i>
-                        <span>Đa thiết bị</span>
+                        <span>TỰ NHIÊN NHƯ NGƯỜI</span>
                     </div>
                 </div>
                 
                 <!-- Feature 5 -->
-                <div class="card-gradient rounded-2xl p-8 hover:transform hover:-translate-y-2 transition-all duration-300" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mb-6">
-                        <i class="fas fa-crosshairs text-2xl text-gold"></i>
+                <div class="vip-card rounded-3xl p-8" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-neon to-gold flex items-center justify-center mb-6">
+                        <i class="fas fa-eye-slash text-2xl text-dark"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Aimbot Gyro</h3>
-                    <p class="text-textSub mb-4">
-                        Dựa Theo Gyro của Game Để Aim, tự nhiên và khó phát hiện hơn aimbot thông thường.
+                    <h3 class="text-2xl font-black mb-4">AN TOÀN KHI STREAM</h3>
+                    <p class="text-textSub mb-6">
+                        Ẩn hoàn toàn khi livestream và quay video, đảm bảo an toàn
                     </p>
-                    <div class="flex items-center text-gold text-sm">
+                    <div class="flex items-center text-neon font-bold">
                         <i class="fas fa-check-circle mr-2"></i>
-                        <span>Chính xác cao</span>
+                        <span>KHÔNG BỊ LỘ</span>
                     </div>
                 </div>
                 
                 <!-- Feature 6 -->
-                <div class="card-gradient rounded-2xl p-8 hover:transform hover:-translate-y-2 transition-all duration-300" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mb-6">
-                        <i class="fas fa-video text-2xl text-gold"></i>
+                <div class="vip-card rounded-3xl p-8" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple to-gold2 flex items-center justify-center mb-6">
+                        <i class="fas fa-sync-alt text-2xl text-dark"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Hidden Stream & Record</h3>
-                    <p class="text-textSub mb-4">
-                        Ẩn tiến trình khi livestream và quay Video, đảm bảo an toàn tuyệt đối khi chia sẻ.
+                    <h3 class="text-2xl font-black mb-4">TỰ ĐỘNG CẬP NHẬT</h3>
+                    <p class="text-textSub mb-6">
+                        Tự động cập nhật để tương thích với các phiên bản game mới nhất
                     </p>
-                    <div class="flex items-center text-gold text-sm">
+                    <div class="flex items-center text-purple font-bold">
                         <i class="fas fa-check-circle mr-2"></i>
-                        <span>An toàn tuyệt đối</span>
+                        <span>LUÔN MỚI NHẤT</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Safety Section -->
-    <section class="section-padding bg-dark">
+    <!-- WARNING & BENEFITS SECTION -->
+    <section id="warning" class="section-padding noise-bg">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-8">
-                <!-- Warning Card -->
-                <div class="card-gradient rounded-2xl p-8 border-l-4 border-red" data-aos="fade-right">
-                    <div class="flex items-center gap-3 mb-6">
-                        <div class="w-12 h-12 rounded-full bg-red/10 flex items-center justify-center">
-                            <i class="fas fa-exclamation-triangle text-red text-xl"></i>
+            <div class="grid lg:grid-cols-2 gap-10">
+                <!-- WARNING CARD -->
+                <div class="vip-card rounded-3xl p-10 red-glow" data-aos="fade-right">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-16 h-16 rounded-2xl bg-red/20 flex items-center justify-center">
+                            <i class="fas fa-exclamation-triangle text-3xl text-red"></i>
                         </div>
-                        <h3 class="text-2xl font-bold">⚠️ Gian Lận Và Những Gì Bạn Phải Chịu</h3>
+                        <div>
+                            <h2 class="text-3xl font-black text-red">⚠️ CẢNH BÁO QUAN TRỌNG</h2>
+                            <p class="text-textSub">Gian lận và những gì bạn phải chịu</p>
+                        </div>
                     </div>
                     
-                    <div class="space-y-4">
-                        <div class="bg-white/5 rounded-lg p-4">
-                            <h4 class="font-bold text-red mb-2">Rủi ro có thể gặp:</h4>
-                            <ul class="list-disc list-inside text-textSub space-y-1">
-                                <li>Nếu lạm dụng gian lận quá mức, bạn có thể bị cấm</li>
-                                <li>Hệ thống Anti-cheat có thể phát hiện hành vi bất thường</li>
-                                <li>Hãy sử dụng một cách thông minh và có chừng mực</li>
+                    <div class="space-y-6">
+                        <div class="bg-white/5 rounded-xl p-6 border border-red/20">
+                            <h3 class="text-xl font-bold text-red mb-4">RỦI RO CÓ THỂ GẶP:</h3>
+                            <ul class="space-y-3 text-textSub">
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-times-circle text-red mt-1"></i>
+                                    <span>Nếu lạm dụng gian lận quá mức, bạn có thể bị cấm</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-times-circle text-red mt-1"></i>
+                                    <span>Hệ thống Anti-cheat có thể phát hiện hành vi bất thường</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-times-circle text-red mt-1"></i>
+                                    <span>Hãy sử dụng một cách thông minh và có chừng mực</span>
+                                </li>
                             </ul>
                         </div>
                         
-                        <div class="bg-white/5 rounded-lg p-4">
-                            <h4 class="font-bold text-gold mb-2">Hạn chế rủi ro:</h4>
-                            <ul class="list-disc list-inside text-textSub space-y-1">
-                                <li>Hạn Chế Nhìn Kẻ Địch Sau Tường</li>
-                                <li>Chỉnh Aimbot Nhẹ Đừng Chỉnh Quá Nhanh</li>
-                                <li>Hãy Chơi Như Là 1 Player Chuyên Nghiệp</li>
-                                <li>Đừng Chơi Giống Như 1 Hacker</li>
+                        <div class="bg-white/5 rounded-xl p-6 border border-gold/20">
+                            <h3 class="text-xl font-bold text-gold mb-4">HẠN CHẾ RỦI RO:</h3>
+                            <ul class="space-y-3 text-textSub">
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-neon mt-1"></i>
+                                    <span>Hạn Chế Nhìn Kẻ Địch Sau Tường</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-neon mt-1"></i>
+                                    <span>Chỉnh Aimbot Nhẹ Đừng Chỉnh Quá Nhanh</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-neon mt-1"></i>
+                                    <span>Hãy Chơi Như Là 1 Player Chuyên Nghiệp</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-neon mt-1"></i>
+                                    <span>Đừng Chơi Giống Như 1 Hacker</span>
+                                </li>
                             </ul>
                         </div>
                         
-                        <div class="bg-red/10 border border-red/20 rounded-lg p-4 mt-6">
-                            <h4 class="font-bold text-red mb-1">⚠️ LƯU Ý QUAN TRỌNG:</h4>
-                            <p class="text-textSub">
+                        <div class="bg-red/10 border-2 border-red/30 rounded-xl p-6">
+                            <h3 class="text-lg font-bold text-red mb-2">⚠️ LƯU Ý QUAN TRỌNG:</h3>
+                            <p class="text-white font-semibold">
                                 HÃY CHỊU TRÁCH NHIỆM ĐỐI VỚI ACCOUNT CỦA BẠN KHI SỬ DỤNG CHEAT
                             </p>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Benefits Card -->
-                <div class="card-gradient rounded-2xl p-8 border-l-4 border-gold" data-aos="fade-left">
-                    <div class="flex items-center gap-3 mb-6">
-                        <div class="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center">
-                            <i class="fas fa-crown text-gold text-xl"></i>
+                <!-- BENEFITS CARD -->
+                <div class="vip-card rounded-3xl p-10 gold-glow" data-aos="fade-left">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-16 h-16 rounded-2xl bg-gold/20 flex items-center justify-center">
+                            <i class="fas fa-crown text-3xl text-gold"></i>
                         </div>
-                        <h3 class="text-2xl font-bold">✨ Quyền lợi khi mua Max Kernel Cheat</h3>
+                        <div>
+                            <h2 class="text-3xl font-black gradient-text">✨ QUYỀN LỢI KHI MUA</h2>
+                            <p class="text-textSub">Max Kernel Cheat Premium</p>
+                        </div>
                     </div>
                     
                     <div class="space-y-6">
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-headset text-gold"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold mb-1">Hỗ Trợ Nhanh Chóng 24/7</h4>
-                                <p class="text-textSub">Đội ngũ support luôn sẵn sàng hỗ trợ bạn mọi lúc</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-gamepad text-gold"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold mb-1">Hỗ Trợ Cài Ipadview - Kích 120 FPS</h4>
-                                <p class="text-textSub">Tối ưu hóa trải nghiệm gaming của bạn</p>
+                        <div class="bg-gradient-to-r from-gold/10 to-transparent rounded-xl p-6 border border-gold/20">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center">
+                                    <i class="fas fa-headset text-xl text-gold"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold">Hỗ Trợ Nhanh Chóng 24/7</h3>
+                                    <p class="text-textSub text-sm">Đội ngũ support luôn sẵn sàng hỗ trợ bạn mọi lúc</p>
+                                </div>
                             </div>
                         </div>
                         
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-keyboard text-gold"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold mb-1">Hỗ Trợ Người Dùng Bàn Phím Chuột</h4>
-                                <p class="text-textSub">Tương thích với mọi phụ kiện gaming</p>
+                        <div class="bg-gradient-to-r from-purple/10 to-transparent rounded-xl p-6 border border-purple/20">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-12 h-12 rounded-full bg-purple/20 flex items-center justify-center">
+                                    <i class="fas fa-gamepad text-xl text-purple"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold">Hỗ Trợ Cài Ipadview - Kích 120 FPS</h3>
+                                    <p class="text-textSub text-sm">Tối ưu hóa trải nghiệm gaming của bạn</p>
+                                </div>
                             </div>
                         </div>
                         
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-rocket text-gold"></i>
+                        <div class="bg-gradient-to-r from-neon/10 to-transparent rounded-xl p-6 border border-neon/20">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-12 h-12 rounded-full bg-neon/20 flex items-center justify-center">
+                                    <i class="fas fa-keyboard text-xl text-neon"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold">Hỗ Trợ Người Dùng Bàn Phím Chuột</h3>
+                                    <p class="text-textSub text-sm">Tương thích với mọi phụ kiện gaming</p>
+                                </div>
                             </div>
-                            <div>
-                                <h4 class="font-bold mb-1">Ép Xung CPU - Tối Ưu Thiết Bị</h4>
-                                <p class="text-textSub">
-                                    <span class="text-gold">(Sẽ Phát Sinh Thêm Chi Phí)</span> - 
-                                    Nâng cao hiệu suất thiết bị của bạn
+                        </div>
+                        
+                        <div class="bg-gradient-to-r from-gold/10 to-purple/10 rounded-xl p-6 border border-gold/20">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-gold to-purple flex items-center justify-center">
+                                    <i class="fas fa-rocket text-xl text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold">ROOT - Ẩn Root - Ép Xung CPU - Tối Ưu Thiết Bị</h3>
+                                    <p class="text-textSub">
+                                        <span class="text-gold font-semibold">(Sẽ Phát Sinh Thêm Chi Phí)</span> - 
+                                        Nâng cao hiệu suất thiết bị của bạn
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8 p-6 bg-gradient-to-r from-gold/5 to-gold2/5 rounded-xl border border-gold/20">
+                            <div class="flex items-center justify-center gap-3">
+                                <i class="fas fa-gem text-2xl text-gold"></i>
+                                <p class="text-center text-gold font-bold text-lg">
+                                    MUA 1 LẦN - HỖ TRỢ TRỌN ĐỜI
                                 </p>
                             </div>
                         </div>
-                        
-                        <div class="mt-8 p-4 bg-gold/5 rounded-lg border border-gold/20">
-                            <p class="text-center text-gold font-semibold">
-                                <i class="fas fa-gem mr-2"></i>
-                                Mua 1 lần - Hỗ trợ trọn đời
-                            </p>
-                        </div>
                     </div>
+                </div>
+            </div>
+            
+            <!-- Additional Stats -->
+            <div class="mt-20 grid grid-cols-2 lg:grid-cols-4 gap-8" data-aos="fade-up">
+                <div class="text-center">
+                    <div class="text-5xl font-black gradient-text mb-4">100%</div>
+                    <p class="text-textSub font-medium">KHÔNG BỊ PHÁT HIỆN</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-black neon-text mb-4">0ms</div>
+                    <p class="text-textSub font-medium">ĐỘ TRỄ</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-black gradient-text mb-4">24/7</div>
+                    <p class="text-textSub font-medium">HỖ TRỢ</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-black neon-text mb-4">∞</div>
+                    <p class="text-textSub font-medium">CẬP NHẬT</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Pricing Section -->
-    <section id="pricing" class="section-padding noise-bg">
+    <section id="pricing" class="section-padding bg-gradient-to-b from-premium to-dark">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
-            <div class="text-center mb-16" data-aos="fade-up">
-                <div class="flex justify-center items-center gap-3 mb-4">
-                    <img src="logo.png" alt="Logo" class="w-10 h-10 rounded-full object-cover">
-                    <span class="inline-block px-4 py-1.5 bg-gold/10 text-gold rounded-full text-sm font-medium">
-                        <i class="fas fa-tags mr-2"></i>CHỌN GÓI PHÙ HỢP
-                    </span>
+            <div class="text-center mb-20" data-aos="fade-up">
+                <div class="inline-flex items-center gap-3 mb-6 px-6 py-3 bg-gradient-to-r from-gold/10 to-purple/10 border border-gold/20 rounded-2xl">
+                    <i class="fas fa-gem text-gold"></i>
+                    <span class="text-gold font-bold tracking-widest">GÓI DỊCH VỤ VIP</span>
                 </div>
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Bảng Giá Max Kernel Cheat</h2>
-                <p class="text-textSub max-w-2xl mx-auto">
-                    Lựa chọn gói dịch vụ phù hợp với nhu cầu của bạn. Tất cả gói đều bao gồm hỗ trợ kỹ thuật 24/7
+                <h2 class="text-5xl md:text-6xl font-black mb-6">
+                    <span class="gradient-text">BẢNG GIÁ</span>
+                    <span class="neon-text block">CAO CẤP</span>
+                </h2>
+                <p class="text-xl text-textSub max-w-3xl mx-auto">
+                    Lựa chọn gói dịch vụ phù hợp với nhu cầu của bạn. Tất cả đều bao gồm hỗ trợ 24/7
                 </p>
             </div>
             
             <!-- Pricing Cards -->
-            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                <!-- Plan 1 -->
-                <div class="card-gradient rounded-2xl p-8 text-center hover:transform hover:-translate-y-2 transition-all duration-300" data-aos="fade-up">
-                    <div class="mb-6">
-                        <h3 class="text-2xl font-bold mb-2">Gói 24h</h3>
-                        <p class="text-textSub">Dùng thử trải nghiệm</p>
-                    </div>
-                    
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Basic Plan -->
+                <div class="vip-card rounded-3xl p-10 text-center" data-aos="fade-up">
                     <div class="mb-8">
-                        <div class="flex justify-center items-baseline mb-2">
-                            <span class="text-5xl font-bold text-white">50.000</span>
-                            <span class="text-textSub ml-2">VND</span>
+                        <h3 class="text-2xl font-black mb-4">GÓI 24H</h3>
+                        <div class="text-textSub mb-6">Dùng thử trải nghiệm</div>
+                        
+                        <div class="mb-10">
+                            <div class="flex justify-center items-baseline mb-4">
+                                <span class="text-6xl font-black gradient-text">50K</span>
+                                <span class="text-2xl text-textSub ml-2">VND</span>
+                            </div>
+                            <p class="text-textSub">Thanh toán 1 lần</p>
                         </div>
-                        <p class="text-textSub text-sm">Thanh toán 1 lần</p>
+                        
+                        <div class="space-y-4 mb-10">
+                            <div class="flex items-center justify-center gap-3">
+                                <i class="fas fa-check text-gold"></i>
+                                <span>Đầy đủ tính năng</span>
+                            </div>
+                            <div class="flex items-center justify-center gap-3">
+                                <i class="fas fa-check text-gold"></i>
+                                <span>Hỗ trợ cơ bản</span>
+                            </div>
+                            <div class="flex items-center justify-center gap-3">
+                                <i class="fas fa-check text-gold"></i>
+                                <span>Dùng thử 24h</span>
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="mb-8 space-y-3">
-                        <div class="flex items-center justify-center gap-2">
-                            <i class="fas fa-check text-green-500"></i>
-                            <span>Toàn bộ tính năng</span>
-                        </div>
-                        <div class="flex items-center justify-center gap-2">
-                            <i class="fas fa-check text-green-500"></i>
-                            <span>Hỗ trợ cơ bản</span>
-                        </div>
-                        <div class="flex items-center justify-center gap-2">
-                            <i class="fas fa-check text-green-500"></i>
-                            <span>Dùng thử 24h</span>
-                        </div>
-                    </div>
-                    
-                    <a href="#" 
-                       class="block w-full py-3.5 bg-gold text-dark font-bold rounded-xl hover:scale-105 transition-transform duration-300">
-                        Tải về ngay
+                    <a href="https://t.me/maxkernelHVC/136" 
+                       target="_blank"
+                       class="block w-full py-4 bg-gradient-to-r from-gray-700 to-gray-800 rounded-xl font-bold hover:from-gray-600 hover:to-gray-700 transition-all duration-300">
+                        TẢI VỀ NGAY
                     </a>
                 </div>
                 
-                <!-- Plan 2 - Featured -->
-                <div class="card-gradient rounded-2xl p-8 text-center border-2 border-gold relative hover:transform hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
-                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                        <span class="px-4 py-1 bg-gold text-dark text-sm font-bold rounded-full">
-                            PHỔ BIẾN NHẤT
-                        </span>
-                    </div>
-                    
-                    <div class="mb-6">
-                        <h3 class="text-2xl font-bold mb-2">Gói 30 ngày</h3>
-                        <p class="text-textSub">Trải nghiệm trọn vẹn</p>
+                <!-- Premium Plan - Featured -->
+                <div class="vip-card rounded-3xl p-10 text-center relative border-2 border-gold gold-glow scale-105" data-aos="fade-up" data-aos-delay="100">
+                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2">
+                        <div class="px-8 py-2 bg-gradient-to-r from-gold to-gold2 rounded-full">
+                            <span class="font-black text-dark text-sm">PHỔ BIẾN NHẤT</span>
+                        </div>
                     </div>
                     
                     <div class="mb-8">
-                        <div class="flex justify-center items-baseline mb-2">
-                            <span class="text-5xl font-bold text-gold">650.000</span>
-                            <span class="text-textSub ml-2">VND</span>
+                        <h3 class="text-2xl font-black mb-4">GÓI 30 NGÀY</h3>
+                        <div class="text-gold font-bold mb-6">Trải nghiệm trọn vẹn</div>
+                        
+                        <div class="mb-10">
+                            <div class="flex justify-center items-baseline mb-4">
+                                <span class="text-6xl font-black gradient-text">650K</span>
+                                <span class="text-2xl text-textSub ml-2">VND</span>
+                            </div>
+                            <p class="text-textSub">Tiết kiệm 35% so với gói ngày</p>
                         </div>
-                        <p class="text-textSub text-sm">Tiết kiệm 35% so với gói ngày</p>
-                    </div>
-                    
-                    <div class="mb-8 space-y-3">
-                        <div class="flex items-center justify-center gap-2">
-                            <i class="fas fa-check text-green-500"></i>
-                            <span>Toàn bộ tính năng cao cấp</span>
-                        </div>
-                        <div class="flex items-center justify-center gap-2">
-                            <i class="fas fa-check text-green-500"></i>
-                            <span>Hỗ trợ ưu tiên 24/7</span>
-                        </div>
-                        <div class="flex items-center justify-center gap-2">
-                            <i class="fas fa-check text-green-500"></i>
-                            <span>Cập nhật miễn phí</span>
-                        </div>
-                        <div class="flex items-center justify-center gap-2">
-                            <i class="fas fa-check text-green-500"></i>
-                            <span>Tối ưu thiết bị</span>
+                        
+                        <div class="space-y-4 mb-10">
+                            <div class="flex items-center justify-center gap-3">
+                                <i class="fas fa-star text-gold"></i>
+                                <span class="font-bold">Toàn bộ tính năng cao cấp</span>
+                            </div>
+                            <div class="flex items-center justify-center gap-3">
+                                <i class="fas fa-crown text-gold"></i>
+                                <span>Hỗ trợ ưu tiên 24/7</span>
+                            </div>
+                            <div class="flex items-center justify-center gap-3">
+                                <i class="fas fa-sync-alt text-gold"></i>
+                                <span>Tự động cập nhật</span>
+                            </div>
+                            <div class="flex items-center justify-center gap-3">
+                                <i class="fas fa-shield-alt text-gold"></i>
+                                <span>Bảo vệ nâng cao</span>
+                            </div>
                         </div>
                     </div>
                     
                     <a href="https://t.me/chien137" 
-                       class="block w-full py-3.5 bg-red text-white font-bold rounded-xl hover:scale-105 transition-transform duration-300">
-                        Liên hệ mua ngay
+                       target="_blank"
+                       class="vip-button block w-full py-4 rounded-xl font-black text-lg">
+                        <i class="fas fa-gem mr-3"></i>MUA NGAY
                     </a>
                 </div>
                 
-                <!-- Plan 3 -->
-                <div class="card-gradient rounded-2xl p-8 text-center hover:transform hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
-                    <div class="mb-6">
-                        <h3 class="text-2xl font-bold mb-2">Gói dài hạn</h3>
-                        <p class="text-textSub">Dành cho game thủ chuyên nghiệp</p>
-                    </div>
-                    
+                <!-- Ultimate Plan -->
+                <div class="vip-card rounded-3xl p-10 text-center" data-aos="fade-up" data-aos-delay="200">
                     <div class="mb-8">
-                        <div class="flex justify-center items-baseline mb-2">
-                            <span class="text-5xl font-bold text-white">Liên hệ</span>
+                        <h3 class="text-2xl font-black mb-4">GÓI DÀI HẠN</h3>
+                        <div class="text-purple font-bold mb-6">Lifetime Access</div>
+                        
+                        <div class="mb-10">
+                            <div class="flex justify-center items-baseline mb-4">
+                                <span class="text-6xl font-black neon-text">LIÊN HỆ</span>
+                            </div>
+                            <p class="text-textSub">Giá ưu đãi đặc biệt</p>
                         </div>
-                        <p class="text-textSub text-sm">Giá ưu đãi đặc biệt</p>
-                    </div>
-                    
-                    <div class="mb-8 space-y-3">
-                        <div class="flex items-center justify-center gap-2">
-                            <i class="fas fa-check text-green-500"></i>
-                            <span>Tất cả tính năng Premium</span>
-                        </div>
-                        <div class="flex items-center justify-center gap-2">
-                            <i class="fas fa-check text-green-500"></i>
-                            <span>Hỗ trợ VIP 24/7</span>
-                        </div>
-                        <div class="flex items-center justify-center gap-2">
-                            <i class="fas fa-check text-green-500"></i>
-                            <span>Ép xung CPU miễn phí</span>
-                        </div>
-                        <div class="flex items-center justify-center gap-2">
-                            <i class="fas fa-check text-green-500"></i>
-                            <span>Bảo hành vĩnh viễn</span>
+                        
+                        <div class="space-y-4 mb-10">
+                            <div class="flex items-center justify-center gap-3">
+                                <i class="fas fa-infinity text-purple"></i>
+                                <span class="font-bold">Sử dụng trọn đời</span>
+                            </div>
+                            <div class="flex items-center justify-center gap-3">
+                                <i class="fas fa-headset text-purple"></i>
+                                <span>Hỗ trợ chuyên dụng</span>
+                            </div>
+                            <div class="flex items-center justify-center gap-3">
+                                <i class="fas fa-rocket text-purple"></i>
+                                <span>Tối ưu phần cứng</span>
+                            </div>
+                            <div class="flex items-center justify-center gap-3">
+                                <i class="fas fa-lock text-purple"></i>
+                                <span>Bảo mật tối đa</span>
+                            </div>
                         </div>
                     </div>
                     
                     <a href="https://t.me/chien137" 
-                       class="block w-full py-3.5 bg-gold text-dark font-bold rounded-xl hover:scale-105 transition-transform duration-300">
-                        Liên hệ tư vấn
+                       target="_blank"
+                       class="premium-button block w-full py-4 rounded-xl font-black text-lg">
+                        <i class="fas fa-crown mr-3"></i>LIÊN HỆ TƯ VẤN
                     </a>
                 </div>
             </div>
             
             <!-- Payment Methods -->
-            <div class="mt-16 text-center" data-aos="fade-up">
-                <h4 class="text-lg font-bold mb-6">Hỗ trợ nhiều phương thức thanh toán</h4>
-                <div class="flex flex-wrap justify-center gap-6">
-                    <div class="bg-white/5 rounded-lg p-4">
-                        <i class="fas fa-credit-card text-2xl text-gold"></i>
-                        <p class="text-sm mt-2">Thẻ ngân hàng</p>
+            <div class="mt-20 text-center" data-aos="fade-up">
+                <h4 class="text-2xl font-black mb-10 gradient-text">PHƯƠNG THỨC THANH TOÁN</h4>
+                <div class="flex flex-wrap justify-center gap-8">
+                    <div class="bg-gradient-to-br from-premium to-card rounded-2xl p-6 border border-gold/10">
+                        <i class="fas fa-credit-card text-4xl text-gold mb-4"></i>
+                        <p class="font-bold">Chuyển khoản ngân hàng</p>
                     </div>
-                    <div class="bg-white/5 rounded-lg p-4">
-                        <i class="fas fa-mobile-alt text-2xl text-gold"></i>
-                        <p class="text-sm mt-2">MoMo</p>
+                    <div class="bg-gradient-to-br from-premium to-card rounded-2xl p-6 border border-purple/10">
+                        <i class="fas fa-mobile-alt text-4xl text-purple mb-4"></i>
+                        <p class="font-bold">Ví MoMo</p>
                     </div>
-                    <div class="bg-white/5 rounded-lg p-4">
-                        <i class="fab fa-telegram text-2xl text-gold"></i>
-                        <p class="text-sm mt-2">Telegram</p>
+                    <div class="bg-gradient-to-br from-premium to-card rounded-2xl p-6 border border-neon/10">
+                        <i class="fab fa-telegram text-4xl text-neon mb-4"></i>
+                        <p class="font-bold">Thanh toán qua Telegram</p>
                     </div>
-                    <div class="bg-white/5 rounded-lg p-4">
-                        <i class="fas fa-wallet text-2xl text-gold"></i>
-                        <p class="text-sm mt-2">ZaloPay</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Demo & Guide Section -->
-    <section class="section-padding bg-dark2">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <!-- Video Demo -->
-                <div data-aos="fade-right">
-                    <div class="mb-6">
-                        <div class="flex items-center gap-3 mb-4">
-                            <img src="logo.png" alt="Logo" class="w-10 h-10 rounded-full object-cover">
-                            <span class="inline-block px-4 py-1.5 bg-gold/10 text-gold rounded-full text-sm font-medium">
-                                <i class="fas fa-video mr-2"></i>VIDEO DEMO
-                            </span>
-                        </div>
-                        <h2 class="text-3xl font-bold mb-4">Xem Nhanh Tại Đây</h2>
-                        <p class="text-textSub">
-                            Xem video demo trực tiếp để thấy sức mạnh của Max Kernel Cheat
-                        </p>
-                    </div>
-                    
-                    <div class="relative rounded-2xl overflow-hidden shadow-2xl">
-                        <div class="aspect-video bg-black">
-                            <!-- Video Placeholder -->
-                            <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-dark to-dark2">
-                                <div class="text-center">
-                                    <div class="w-20 h-20 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-4">
-                                        <i class="fas fa-play text-3xl text-gold"></i>
-                                    </div>
-                                    <p class="text-textSub">Video Demo Max Kernel Cheat</p>
-                                    <p class="text-sm text-textSub mt-2">Click để xem trực tiếp trên YouTube</p>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="https://www.youtube.com/watch?v=ZqLqt2FuwSE" 
-                           target="_blank"
-                           class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 hover:opacity-100 transition-opacity duration-300">
-                            <div class="px-6 py-3 bg-red rounded-lg font-bold">
-                                <i class="fas fa-play mr-2"></i>Xem trên YouTube
-                            </div>
-                        </a>
-                    </div>
-                    
-                    <p class="text-textSub text-sm mt-4">
-                        Video hướng dẫn cài đặt và sử dụng <b>Max Kernel Cheat</b> cơ bản.
-                        Xem để hiểu rõ cách thức hoạt động và tính năng.
-                    </p>
-                </div>
-                
-                <!-- Installation Steps -->
-                <div data-aos="fade-left">
-                    <div class="card-gradient rounded-2xl p-8">
-                        <div class="flex items-center gap-3 mb-6">
-                            <img src="logo.png" alt="Logo" class="w-10 h-10 rounded-full object-cover">
-                            <h3 class="text-2xl font-bold">Các bước cài đặt cơ bản</h3>
-                        </div>
-                        
-                        <div class="space-y-6">
-                            <!-- Step 1 -->
-                            <div class="flex gap-4">
-                                <div class="flex-shrink-0">
-                                    <div class="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center">
-                                        <span class="text-gold font-bold text-xl">1</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-lg mb-2">Root thiết bị Android</h4>
-                                    <p class="text-textSub">
-                                        Đảm bảo thiết bị của bạn đã được root với kernel hỗ trợ (5.10 - 6.6)
-                                    </p>
-                                </div>
-                            </div>
-                            
-                            <!-- Step 2 -->
-                            <div class="flex gap-4">
-                                <div class="flex-shrink-0">
-                                    <div class="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center">
-                                        <span class="text-gold font-bold text-xl">2</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-lg mb-2">Cài đặt Max Kernel Cheat</h4>
-                                    <p class="text-textSub">
-                                        Tải file APK từ link chính thức và tiến hành cài đặt
-                                    </p>
-                                </div>
-                            </div>
-                            
-                            <!-- Step 3 -->
-                            <div class="flex gap-4">
-                                <div class="flex-shrink-0">
-                                    <div class="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center">
-                                        <span class="text-gold font-bold text-xl">3</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-lg mb-2">Cấp quyền kernel</h4>
-                                    <p class="text-textSub">
-                                        Cấp quyền superuser và kernel permissions cho ứng dụng
-                                    </p>
-                                </div>
-                            </div>
-                            
-                            <!-- Step 4 -->
-                            <div class="flex gap-4">
-                                <div class="flex-shrink-0">
-                                    <div class="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center">
-                                        <span class="text-gold font-bold text-xl">4</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-lg mb-2">Tuỳ chỉnh và sử dụng</h4>
-                                    <p class="text-textSub">
-                                        Mở ứng dụng, cấu hình theo ý muốn và bắt đầu trải nghiệm
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="mt-8 pt-6 border-t border-white/10">
-                            <div class="flex items-center justify-between">
-                                <div>
-                                    <h4 class="font-bold">Cần hỗ trợ?</h4>
-                                    <p class="text-textSub text-sm">Liên hệ ngay với support</p>
-                                </div>
-                                <a href="https://t.me/chien137" 
-                                   class="px-4 py-2 bg-gold text-dark font-semibold rounded-lg hover:scale-105 transition-transform">
-                                    <i class="fas fa-headset mr-2"></i>Hỗ trợ ngay
-                                </a>
-                            </div>
-                        </div>
+                    <div class="bg-gradient-to-br from-premium to-card rounded-2xl p-6 border border-gold/10">
+                        <i class="fas fa-coins text-4xl text-gold mb-4"></i>
+                        <p class="font-bold">Tiền điện tử</p>
                     </div>
                 </div>
             </div>
@@ -820,159 +927,174 @@
     </section>
 
     <!-- Support Section -->
-    <section id="support" class="section-padding bg-dark">
+    <section id="support" class="section-padding noise-bg">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
-            <div class="text-center mb-16" data-aos="fade-up">
-                <div class="flex justify-center items-center gap-3 mb-4">
-                    <img src="logo.png" alt="Logo" class="w-10 h-10 rounded-full object-cover">
-                    <span class="inline-block px-4 py-1.5 bg-gold/10 text-gold rounded-full text-sm font-medium">
-                        <i class="fas fa-hands-helping mr-2"></i>HỖ TRỢ & CỘNG ĐỒNG
-                    </span>
+            <div class="text-center mb-20" data-aos="fade-up">
+                <div class="inline-flex items-center gap-3 mb-6 px-6 py-3 bg-gradient-to-r from-purple/10 to-neon/10 border border-purple/20 rounded-2xl">
+                    <i class="fas fa-headset text-purple"></i>
+                    <span class="text-purple font-bold tracking-widest">HỖ TRỢ 24/7</span>
                 </div>
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Luôn Đồng Hành Cùng Bạn</h2>
-                <p class="text-textSub max-w-2xl mx-auto">
-                    Chúng tôi cam kết hỗ trợ bạn 24/7 với đội ngũ kỹ thuật viên chuyên nghiệp
+                <h2 class="text-5xl md:text-6xl font-black mb-6">
+                    <span class="gradient-text">HỖ TRỢ</span>
+                    <span class="neon-text block">CHUYÊN NGHIỆP</span>
+                </h2>
+                <p class="text-xl text-textSub max-w-3xl mx-auto">
+                    Đội ngũ hỗ trợ của chúng tôi luôn sẵn sàng giúp đỡ bạn mọi lúc, mọi nơi
                 </p>
             </div>
             
             <!-- Support Grid -->
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Documentation -->
-                <div class="card-gradient rounded-2xl p-8 hover:transform hover:-translate-y-2 transition-all duration-300" data-aos="fade-up">
-                    <div class="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mb-6">
-                        <i class="fas fa-book text-2xl text-gold"></i>
+                <div class="vip-card rounded-3xl p-10 text-center" data-aos="fade-up">
+                    <div class="w-20 h-20 mx-auto mb-8 rounded-2xl bg-gradient-to-br from-gold to-gold2 flex items-center justify-center">
+                        <i class="fas fa-book text-3xl text-dark"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Tài Liệu Hướng Dẫn</h3>
-                    <p class="text-textSub mb-6">
-                        Hướng dẫn chi tiết từ A-Z cách cài đặt, cấu hình và sử dụng Max Kernel Cheat hiệu quả nhất.
+                    <h3 class="text-2xl font-black mb-6">TÀI LIỆU HƯỚNG DẪN</h3>
+                    <p class="text-textSub mb-8">
+                        Hướng dẫn chi tiết từ A-Z cách cài đặt và sử dụng hiệu quả nhất.
                     </p>
-                    <ul class="space-y-2 mb-6">
-                        <li class="flex items-center gap-2">
-                            <i class="fas fa-check text-green-500"></i>
-                            <span>Hướng dẫn cài đặt chi tiết</span>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <i class="fas fa-check text-green-500"></i>
-                            <span>Cấu hình tối ưu cho từng dòng máy</span>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <i class="fas fa-check text-green-500"></i>
-                            <span>FAQ - Câu hỏi thường gặp</span>
-                        </li>
-                    </ul>
-                    <a href="#" class="text-gold font-semibold hover:underline inline-flex items-center gap-2">
-                        Xem tài liệu <i class="fas fa-arrow-right"></i>
+                    <a href="#" class="inline-flex items-center gap-2 text-gold font-bold hover:gap-4 transition-all duration-300">
+                        <span>XEM HƯỚNG DẪN</span>
+                        <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
                 
                 <!-- Community -->
-                <div class="card-gradient rounded-2xl p-8 hover:transform hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mb-6">
-                        <i class="fab fa-telegram text-2xl text-gold"></i>
+                <div class="vip-card rounded-3xl p-10 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-20 h-20 mx-auto mb-8 rounded-2xl bg-gradient-to-br from-purple to-neon flex items-center justify-center">
+                        <i class="fab fa-telegram text-3xl text-dark"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Cộng Đồng Telegram</h3>
-                    <p class="text-textSub mb-6">
-                        Tham gia cộng đồng hơn 10,000 thành viên để cùng trao đổi kinh nghiệm và nhận hỗ trợ nhanh chóng.
+                    <h3 class="text-2xl font-black mb-6">CỘNG ĐỒNG TELEGRAM</h3>
+                    <p class="text-textSub mb-8">
+                        Tham gia nhóm Telegram với hơn 10,000 thành viên.
                     </p>
-                    <ul class="space-y-2 mb-6">
-                        <li class="flex items-center gap-2">
-                            <i class="fas fa-check text-green-500"></i>
-                            <span>Nhận thông báo cập nhật mới nhất</span>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <i class="fas fa-check text-green-500"></i>
-                            <span>Chia sẻ kinh nghiệm sử dụng</span>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <i class="fas fa-check text-green-500"></i>
-                            <span>Hỗ trợ nhanh từ cộng đồng</span>
-                        </li>
-                    </ul>
                     <a href="https://t.me/maxkernelHVC" 
                        target="_blank"
-                       class="inline-flex items-center gap-2 px-5 py-2.5 bg-[#0088cc] text-white rounded-lg font-semibold hover:scale-105 transition-transform">
-                        <i class="fab fa-telegram"></i> Tham gia Telegram
+                       class="vip-button inline-flex items-center gap-3 px-8 py-4 rounded-xl font-bold">
+                        <i class="fab fa-telegram"></i>
+                        THAM GIA TELEGRAM
                     </a>
                 </div>
                 
                 <!-- Technical Support -->
-                <div class="card-gradient rounded-2xl p-8 hover:transform hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mb-6">
-                        <i class="fas fa-headset text-2xl text-gold"></i>
+                <div class="vip-card rounded-3xl p-10 text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-20 h-20 mx-auto mb-8 rounded-2xl bg-gradient-to-br from-neon to-purple flex items-center justify-center">
+                        <i class="fas fa-headset text-3xl text-dark"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Hỗ Trợ Kỹ Thuật 24/7</h3>
-                    <p class="text-textSub mb-6">
-                        Đội ngũ kỹ thuật viên chuyên nghiệp luôn sẵn sàng hỗ trợ bạn mọi vấn đề kỹ thuật.
+                    <h3 class="text-2xl font-black mb-6">HỖ TRỢ TRỰC TIẾP</h3>
+                    <p class="text-textSub mb-8">
+                        Liên hệ trực tiếp với đội ngũ hỗ trợ kỹ thuật.
                     </p>
-                    <div class="space-y-4 mb-6">
-                        <div class="flex items-center gap-3">
-                            <img src="logo.png" alt="Logo" class="w-10 h-10 rounded-full object-cover">
-                            <div>
-                                <p class="font-semibold">Dealer Dkey</p>
-                                <p class="text-textSub text-sm">@mdkeyy</p>
+                    <div class="space-y-4">
+                        <a href="https://t.me/mdkeyy" 
+                           target="_blank"
+                           class="premium-button block py-4 rounded-xl font-bold">
+                            LIÊN HỆ DEALER DKEY
+                        </a>
+                        <a href="https://t.me/chien137" 
+                           target="_blank"
+                           class="vip-button block py-4 rounded-xl font-bold">
+                            LIÊN HỆ DEALER HVC
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Live Support -->
+            <div class="mt-20 vip-card rounded-3xl p-10" data-aos="fade-up">
+                <div class="grid lg:grid-cols-2 gap-10 items-center">
+                    <div>
+                        <h3 class="text-3xl font-black mb-6 gradient-text">TÌNH TRẠNG HỖ TRỢ</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-3 h-3 rounded-full bg-neon animate-pulse"></div>
+                                <div>
+                                    <p class="font-bold">Thời gian phản hồi trung bình</p>
+                                    <p class="text-textSub">Dưới 5 phút</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <img src="logo.png" alt="Logo" class="w-10 h-10 rounded-full object-cover">
-                            <div>
-                                <p class="font-semibold">Dealer HVC</p>
-                                <p class="text-textSub text-sm">@chien137</p>
+                            <div class="flex items-center gap-4">
+                                <div class="w-3 h-3 rounded-full bg-gold animate-pulse" style="animation-delay: 0.5s;"></div>
+                                <div>
+                                    <p class="font-bold">Thời gian hỗ trợ</p>
+                                    <p class="text-textSub">24/7 cả năm</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-3 h-3 rounded-full bg-purple animate-pulse" style="animation-delay: 1s;"></div>
+                                <div>
+                                    <p class="font-bold">Tỷ lệ giải quyết</p>
+                                    <p class="text-textSub">99.8% thành công</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <a href="https://t.me/mdkeyy" 
-                       target="_blank"
-                       class="inline-flex items-center gap-2 px-5 py-2.5 bg-gold text-dark rounded-lg font-semibold hover:scale-105 transition-transform">
-                        <i class="fas fa-comment"></i> Liên hệ hỗ trợ
-                    </a>
+                    <div class="text-center">
+                        <div class="w-32 h-32 mx-auto mb-6 logo-container">
+                            <img src="logo.png" alt="Logo" class="w-full h-full rounded-full object-cover">
+                        </div>
+                        <h4 class="text-2xl font-black mb-4">MAX KERNEL CHEAT</h4>
+                        <p class="text-textSub mb-6">Hỗ trợ cao cấp luôn hoạt động</p>
+                        <div class="inline-flex items-center gap-2 px-6 py-3 bg-gold/10 rounded-xl">
+                            <div class="w-2 h-2 rounded-full bg-neon animate-pulse"></div>
+                            <span class="font-bold text-neon">ĐANG HOẠT ĐỘNG</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Final CTA -->
-    <section class="py-20 bg-gradient-to-r from-dark to-black relative overflow-hidden">
-        <div class="absolute inset-0 noise-bg"></div>
+    <section class="py-32 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-dark via-premium to-dark"></div>
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="max-w-4xl mx-auto text-center" data-aos="zoom-in">
-                <div class="flex justify-center mb-6">
-                    <img src="logo.png" alt="Logo" class="w-16 h-16 rounded-full object-cover glow">
+                <div class="w-24 h-24 mx-auto mb-10 logo-container">
+                    <img src="logo.png" alt="Logo" class="w-full h-full rounded-full object-cover">
                 </div>
-                <h2 class="text-4xl md:text-5xl font-bold mb-6">
-                    Sẵn sàng <span class="text-gold">trải nghiệm</span> sức mạnh thực sự?
+                
+                <h2 class="text-5xl md:text-7xl font-black mb-8">
+                    <span class="gradient-text">SẴN SÀNG</span>
+                    <span class="neon-text block">TRẢI NGHIỆM?</span>
                 </h2>
-                <p class="text-xl text-textSub mb-10 max-w-2xl mx-auto">
-                    Hàng ngàn game thủ đã tin tưởng và sử dụng Max Kernel Cheat. Đến lượt bạn!
+                
+                <p class="text-2xl text-textSub mb-12 max-w-2xl mx-auto">
+                    Tham gia cùng hàng ngàn game thủ đã tin tưởng Max Kernel Cheat
                 </p>
                 
-                <div class="flex flex-wrap justify-center gap-6">
+                <div class="flex flex-wrap justify-center gap-6 mb-16">
                     <a href="https://t.me/mdkeyy" 
-                       class="px-10 py-4 bg-gold text-dark text-lg font-bold rounded-xl hover:scale-105 transition-transform duration-300 shadow-2xl">
-                        <i class="fas fa-rocket mr-2"></i>Bắt đầu ngay
+                       target="_blank"
+                       class="vip-button px-12 py-6 rounded-2xl text-xl font-black">
+                        <i class="fas fa-rocket mr-4"></i>BẮT ĐẦU NGAY
                     </a>
                     <a href="https://t.me/chien137" 
-                       class="px-10 py-4 border-2 border-gold text-gold text-lg font-bold rounded-xl hover:bg-gold hover:text-dark transition-colors duration-300">
-                        <i class="fas fa-question-circle mr-2"></i>Cần tư vấn?
+                       target="_blank"
+                       class="premium-button px-12 py-6 rounded-2xl text-xl font-black">
+                        <i class="fas fa-comments mr-4"></i>TƯ VẤN TRỰC TIẾP
                     </a>
                 </div>
                 
-                <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                    <div>
-                        <div class="text-3xl font-bold text-gold">10K+</div>
-                        <div class="text-textSub">Người dùng</div>
+                <!-- Final Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="text-4xl font-black gradient-text mb-2">10K+</div>
+                        <p class="text-textSub font-medium">NGƯỜI DÙNG</p>
                     </div>
-                    <div>
-                        <div class="text-3xl font-bold text-gold">99%</div>
-                        <div class="text-textSub">Ổn định</div>
+                    <div class="text-center">
+                        <div class="text-4xl font-black neon-text mb-2">100%</div>
+                        <p class="text-textSub font-medium">HÀI LÒNG</p>
                     </div>
-                    <div>
-                        <div class="text-3xl font-bold text-gold">24/7</div>
-                        <div class="text-textSub">Hỗ trợ</div>
+                    <div class="text-center">
+                        <div class="text-4xl font-black gradient-text mb-2">0</div>
+                        <p class="text-textSub font-medium">PHÁT HIỆN</p>
                     </div>
-                    <div>
-                        <div class="text-3xl font-bold text-gold">0</div>
-                        <div class="text-textSub">Phát hiện</div>
+                    <div class="text-center">
+                        <div class="text-4xl font-black neon-text mb-2">24/7</div>
+                        <p class="text-textSub font-medium">HỖ TRỢ</p>
                     </div>
                 </div>
             </div>
@@ -980,45 +1102,97 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-10 bg-black border-t border-white/10">
+    <footer class="py-16 bg-black border-t border-gold/10">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-6 md:mb-0">
-                    <div class="flex items-center gap-3">
-                        <img src="logo.png" 
-                             alt="Max Kernel Cheat Logo" 
-                             class="w-10 h-10 rounded-full logo-image object-cover">
-                        <div>
-                            <h3 class="font-bold text-xl">MAX KERNEL CHEAT</h3>
-                            <p class="text-textSub text-sm">Kernel-Level Android Gaming</p>
+            <div class="grid md:grid-cols-3 gap-12 mb-12">
+                <!-- Brand Info -->
+                <div>
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="logo-container">
+                            <img src="logo.png" alt="Logo" class="w-12 h-12 rounded-full object-cover">
                         </div>
+                        <div>
+                            <h3 class="font-black text-xl gradient-text">MAX KERNEL CHEAT</h3>
+                            <p class="text-textSub text-sm">Giải Pháp Gaming Cao Cấp</p>
+                        </div>
+                    </div>
+                    <p class="text-textSub mb-8">
+                        Giải pháp kernel-level tối ưu nhất cho gaming Android. 
+                        Hiệu suất vượt trội, bảo mật tuyệt đối.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="https://t.me/maxkernelHVC" 
+                           target="_blank"
+                           class="w-12 h-12 rounded-xl bg-premium border border-gold/10 flex items-center justify-center hover:bg-gold/10 transition-colors">
+                            <i class="fab fa-telegram text-xl text-gold"></i>
+                        </a>
+                        <a href="https://t.me/chien137" 
+                           target="_blank"
+                           class="w-12 h-12 rounded-xl bg-premium border border-purple/10 flex items-center justify-center hover:bg-purple/10 transition-colors">
+                            <i class="fas fa-headset text-xl text-purple"></i>
+                        </a>
+                        <a href="https://t.me/mdkeyy" 
+                           target="_blank"
+                           class="w-12 h-12 rounded-xl bg-premium border border-neon/10 flex items-center justify-center hover:bg-neon/10 transition-colors">
+                            <i class="fas fa-user-tie text-xl text-neon"></i>
+                        </a>
                     </div>
                 </div>
                 
-                <div class="flex gap-6 mb-6 md:mb-0">
-                    <a href="https://t.me/maxkernelHVC" target="_blank" class="text-textSub hover:text-gold transition-colors">
-                        <i class="fab fa-telegram text-xl"></i>
-                    </a>
-                    <a href="https://t.me/chien137" target="_blank" class="text-textSub hover:text-gold transition-colors">
-                        <i class="fas fa-headset text-xl"></i>
-                    </a>
-                    <a href="https://t.me/mdkeyy" target="_blank" class="text-textSub hover:text-gold transition-colors">
-                        <i class="fas fa-user-tie text-xl"></i>
-                    </a>
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-bold text-xl mb-8 gradient-text">LIÊN KẾT NHANH</h4>
+                    <div class="grid grid-cols-2 gap-4">
+                        <a href="#home" class="text-textSub hover:text-gold transition-colors">Trang Chủ</a>
+                        <a href="#features" class="text-textSub hover:text-gold transition-colors">Tính Năng</a>
+                        <a href="#warning" class="text-textSub hover:text-gold transition-colors">Cảnh Báo</a>
+                        <a href="#pricing" class="text-textSub hover:text-gold transition-colors">Bảng Giá</a>
+                        <a href="#support" class="text-textSub hover:text-gold transition-colors">Hỗ Trợ</a>
+                        <a href="https://t.me/maxkernelHVC" 
+                           target="_blank"
+                           class="text-textSub hover:text-gold transition-colors">Telegram</a>
+                    </div>
                 </div>
                 
-                <div class="text-center md:text-right">
-                    <p class="text-textSub">© 2025 Max Kernel Cheat. All rights reserved.</p>
-                    <p class="text-textSub text-sm mt-2">
-                        Chỉ dành cho mục đích giáo dục và nghiên cứu
-                    </p>
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-bold text-xl mb-8 neon-text">LIÊN HỆ</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-headset text-gold"></i>
+                            <a href="https://t.me/chien137" 
+                               target="_blank"
+                               class="text-textSub hover:text-gold transition-colors">
+                                @chien137
+                            </a>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-user-tie text-gold"></i>
+                            <a href="https://t.me/mdkeyy" 
+                               target="_blank"
+                               class="text-textSub hover:text-gold transition-colors">
+                                @mdkeyy
+                            </a>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-users text-gold"></i>
+                            <a href="https://t.me/maxkernelHVC" 
+                               target="_blank"
+                               class="text-textSub hover:text-gold transition-colors">
+                                @maxkernelHVC
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
             
-            <div class="mt-10 pt-6 border-t border-white/10 text-center">
+            <div class="pt-8 border-t border-gold/10 text-center">
+                <p class="text-textSub mb-4">
+                    © 2024 MAX KERNEL CHEAT ®. Bảo lưu mọi quyền. Giải pháp Gaming Cao Cấp.
+                </p>
                 <p class="text-textSub text-sm">
                     <i class="fas fa-exclamation-triangle text-red mr-2"></i>
-                    Sử dụng cheat có thể vi phạm điều khoản dịch vụ của game. Hãy chịu trách nhiệm với tài khoản của bạn.
+                    Chỉ dành cho mục đích giáo dục và nghiên cứu. Sử dụng có trách nhiệm.
                 </p>
             </div>
         </div>
@@ -1029,9 +1203,10 @@
     <script>
         // Initialize AOS
         AOS.init({
-            duration: 800,
+            duration: 1200,
             once: true,
-            easing: 'ease-out-cubic'
+            easing: 'ease-out-cubic',
+            offset: 100
         });
         
         // Mobile menu toggle
@@ -1050,10 +1225,10 @@
         // Header scroll effect
         window.addEventListener('scroll', () => {
             const header = document.getElementById('header');
-            if (window.scrollY > 100) {
-                header.classList.add('bg-black/95', 'shadow-lg');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-2xl', 'border-gold/20');
             } else {
-                header.classList.remove('bg-black/95', 'shadow-lg');
+                header.classList.remove('shadow-2xl', 'border-gold/20');
             }
         });
         
@@ -1068,7 +1243,7 @@
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
                     // Close mobile menu if open
-                    if (!mobileMenu.classList.contains('hidden')) {
+                    if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
                         mobileMenu.classList.add('hidden');
                         mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
                     }
@@ -1079,41 +1254,6 @@
                     });
                 }
             });
-        });
-        
-        // Add active class to navigation links on scroll
-        const sections = document.querySelectorAll('section');
-        const navLinks = document.querySelectorAll('nav a');
-        
-        window.addEventListener('scroll', () => {
-            let current = '';
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                
-                if (scrollY >= (sectionTop - 100)) {
-                    current = section.getAttribute('id');
-                }
-            });
-            
-            navLinks.forEach(link => {
-                link.classList.remove('text-gold');
-                link.classList.add('text-textSub');
-                
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.remove('text-textSub');
-                    link.classList.add('text-gold');
-                }
-            });
-        });
-        
-        // Current year for footer
-        document.addEventListener('DOMContentLoaded', () => {
-            const yearElement = document.querySelector('#current-year');
-            if (yearElement) {
-                yearElement.textContent = new Date().getFullYear();
-            }
         });
     </script>
 </body>
