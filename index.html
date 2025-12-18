@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAX KERNEL CHEAT ® | Giải Pháp Kernel Cao Cấp Cho Android Gaming</title>
+    <title>MAX KERNEL CHEAT ® | MÙA GIÁNG SINH - GIẢI PHÁP KERNEL CAO CẤP</title>
     <meta name="description" content="Max Kernel Cheat - Giải pháp kernel-level cao cấp nhất cho Android gaming. Hiệu suất vượt trội, bảo mật tuyệt đối, hỗ trợ 24/7.">
     <meta name="keywords" content="Max Kernel Cheat, Android Kernel, Premium Cheat, Gaming Solution, PUBG Mobile, Kernel Hack">
     <meta name="robots" content="index, follow">
@@ -40,7 +40,7 @@
                         dark2: '#0A0A0A',
                         card: '#121212',
                         premium: '#1A1A1A',
-                        // Màu chủ đạo: Cam
+                        // Màu chủ đạo: Cam + Màu Noel
                         orange: {
                             50: '#FFF7ED',
                             100: '#FFEDD5',
@@ -59,17 +59,22 @@
                             600: '#E54B19',
                             700: '#CC3D14'
                         },
-                        // MÀU ACCENT
-                        accent: {
-                            500: '#FF7A3D',
-                            600: '#E56933',
-                            700: '#CC592A'
+                        // MÀU NOEL
+                        christmas: {
+                            red: '#DC2626',
+                            green: '#059669',
+                            gold: '#D97706',
+                            silver: '#9CA3AF',
                         },
+                        snow: '#F0F9FF',
                         text: '#FFFFFF',
                         textSub: '#B0B0B0',
                         textDark: '#1A1A1A'
                     },
                     animation: {
+                        'snowfall': 'snowfall 10s linear infinite',
+                        'snowfall-slow': 'snowfall 15s linear infinite',
+                        'snowfall-fast': 'snowfall 8s linear infinite',
                         'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
                         'float': 'float 3s ease-in-out infinite',
                         'float-delayed': 'float 3s ease-in-out 0.5s infinite',
@@ -77,15 +82,35 @@
                         'border-glow': 'border-glow 2s ease-in-out infinite',
                         'neon': 'neon 1.5s ease-in-out infinite alternate',
                         'gradient': 'gradient 8s ease infinite',
-                        'particle-float': 'particle-float 20s linear infinite',
-                        'particle-float-reverse': 'particle-float-reverse 25s linear infinite',
-                        'scanline': 'scanline 2s linear infinite',
-                        'glitch': 'glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate',
-                        'fade-in-up': 'fade-in-up 0.8s ease-out',
-                        'text-shimmer': 'text-shimmer 3s ease-in-out infinite',
-                        'orange-glow': 'orange-glow 2s ease-in-out infinite alternate'
+                        'twinkle': 'twinkle 1s ease-in-out infinite alternate',
+                        'bell-ring': 'bell-ring 2s ease-in-out infinite',
+                        'christmas-light': 'christmas-light 2s ease-in-out infinite',
+                        'star-sparkle': 'star-sparkle 1.5s ease-in-out infinite',
                     },
                     keyframes: {
+                        'snowfall': {
+                            '0%': { transform: 'translateY(-100px) translateX(0px) rotate(0deg)', opacity: '0' },
+                            '10%': { opacity: '1' },
+                            '90%': { opacity: '1' },
+                            '100%': { transform: 'translateY(100vh) translateX(100px) rotate(360deg)', opacity: '0' }
+                        },
+                        'twinkle': {
+                            '0%, 100%': { opacity: '0.7', transform: 'scale(1)' },
+                            '50%': { opacity: '1', transform: 'scale(1.1)' }
+                        },
+                        'bell-ring': {
+                            '0%, 100%': { transform: 'rotate(0deg)' },
+                            '25%': { transform: 'rotate(15deg)' },
+                            '75%': { transform: 'rotate(-15deg)' }
+                        },
+                        'christmas-light': {
+                            '0%, 100%': { opacity: '1' },
+                            '50%': { opacity: '0.5' }
+                        },
+                        'star-sparkle': {
+                            '0%, 100%': { transform: 'scale(1)', opacity: '1' },
+                            '50%': { transform: 'scale(1.2)', opacity: '0.8' }
+                        },
                         'pulse-glow': {
                             '0%, 100%': { 'box-shadow': '0 0 25px rgba(249, 115, 22, 0.4), 0 0 50px rgba(249, 115, 22, 0.1)' },
                             '50%': { 'box-shadow': '0 0 45px rgba(249, 115, 22, 0.8), 0 0 80px rgba(249, 115, 22, 0.2)' }
@@ -107,51 +132,18 @@
                             'from': { 'text-shadow': '0 0 10px #fff, 0 0 20px #fff, 0 0 30px #FF5A1F, 0 0 40px #FF5A1F, 0 0 50px #FF5A1F, 0 0 60px #FF5A1F' },
                             'to': { 'text-shadow': '0 0 5px #fff, 0 0 10px #fff, 0 0 15px #FF5A1F, 0 0 20px #FF5A1F, 0 0 25px #FF5A1F, 0 0 30px #FF5A1F' }
                         },
-                        'orange-glow': {
-                            'from': { 'text-shadow': '0 0 10px #fff, 0 0 20px #fff, 0 0 30px #F97316, 0 0 40px #F97316' },
-                            'to': { 'text-shadow': '0 0 5px #fff, 0 0 10px #fff, 0 0 15px #F97316, 0 0 20px #F97316' }
-                        },
                         'gradient': {
                             '0%, 100%': { 'background-position': '0% 50%' },
                             '50%': { 'background-position': '100% 50%' }
-                        },
-                        'particle-float': {
-                            '0%': { transform: 'translateY(0) translateX(0) rotate(0deg)' },
-                            '100%': { transform: 'translateY(-1000px) translateX(500px) rotate(360deg)' }
-                        },
-                        'particle-float-reverse': {
-                            '0%': { transform: 'translateY(0) translateX(0) rotate(0deg)' },
-                            '100%': { transform: 'translateY(-1000px) translateX(-500px) rotate(-360deg)' }
-                        },
-                        'scanline': {
-                            '0%': { transform: 'translateY(-100%)' },
-                            '100%': { transform: 'translateY(100vh)' }
-                        },
-                        'glitch': {
-                            '0%': { transform: 'translate(0)' },
-                            '20%': { transform: 'translate(-2px, 2px)' },
-                            '40%': { transform: 'translate(-2px, -2px)' },
-                            '60%': { transform: 'translate(2px, 2px)' },
-                            '80%': { transform: 'translate(2px, -2px)' },
-                            '100%': { transform: 'translate(0)' }
-                        },
-                        'fade-in-up': {
-                            '0%': { opacity: '0', transform: 'translateY(20px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' }
-                        },
-                        'text-shimmer': {
-                            '0%': { 'background-position': '200% center' },
-                            '100%': { 'background-position': '-200% center' }
                         }
                     },
                     backgroundImage: {
-                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-                        'gradient-premium': 'linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 50%, #0A0A0A 100%)',
+                        'christmas-gradient': 'linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 50%, #0A0A0A 100%)',
+                        'snow-pattern': 'url("data:image/svg+xml,%3Csvg width=\'100\' height=\'100\' viewBox=\'0 0 100 100\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z\' fill=\'%23F97316\' fill-opacity=\'0.05\' fill-rule=\'evenodd\'/%3E%3C/svg%3E")',
                         'gradient-orange': 'linear-gradient(90deg, #F97316 0%, #FB923C 100%)',
                         'gradient-orange-dark': 'linear-gradient(90deg, #C2410C 0%, #F97316 100%)',
                         'gradient-orange-neon': 'linear-gradient(90deg, #FF5A1F 0%, #FF7A3D 100%)',
-                        'gradient-cyber': 'linear-gradient(45deg, #F97316, #FF5A1F, #FF7A3D, #F97316)',
-                        'grid-pattern': 'linear-gradient(rgba(249, 115, 22, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(249, 115, 22, 0.05) 1px, transparent 1px)'
+                        'gradient-christmas': 'linear-gradient(90deg, #F97316 0%, #DC2626 50%, #F97316 100%)',
                     }
                 }
             }
@@ -186,33 +178,31 @@
             height: 100%;
             background: 
                 radial-gradient(circle at 20% 30%, rgba(249, 115, 22, 0.03) 0%, transparent 50%),
-                radial-gradient(circle at 80% 70%, rgba(234, 88, 12, 0.03) 0%, transparent 50%),
-                radial-gradient(circle at 40% 80%, rgba(255, 90, 31, 0.03) 0%, transparent 50%);
+                radial-gradient(circle at 80% 70%, rgba(220, 38, 38, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, rgba(5, 150, 105, 0.03) 0%, transparent 50%);
             z-index: -1;
         }
         
-        /* Cyber Grid Background */
-        .cyber-grid {
-            background-size: 50px 50px;
-            background-image: 
-                linear-gradient(to right, rgba(249, 115, 22, 0.03) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(249, 115, 22, 0.03) 1px, transparent 1px);
+        /* Christmas Background */
+        .christmas-bg {
+            background: linear-gradient(180deg, #010101 0%, #0A0A0A 50%, #010101 100%);
             position: relative;
             overflow: hidden;
         }
         
-        .cyber-grid::after {
+        .christmas-bg::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(45deg, transparent 30%, rgba(249, 115, 22, 0.02) 50%, transparent 70%);
-            animation: shine 3s ease-in-out infinite;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23F97316' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+            opacity: 0.1;
+            pointer-events: none;
         }
         
-        /* Premium Cards */
+        /* Premium Cards với điểm nhấn Noel */
         .premium-card {
             background: linear-gradient(145deg, rgba(26, 26, 26, 0.9), rgba(15, 15, 15, 0.9));
             backdrop-filter: blur(10px);
@@ -234,8 +224,8 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, #F97316, #FF5A1F, #FF7A3D, transparent);
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #F97316, #DC2626, #F97316, transparent);
         }
         
         .premium-card::after {
@@ -253,7 +243,7 @@
             left: 100%;
         }
         
-        /* Featured Card */
+        /* Featured Card Noel */
         .featured-card {
             background: linear-gradient(135deg, #1A1A1A 0%, #121212 100%);
             border: 2px solid transparent;
@@ -268,91 +258,33 @@
             left: -2px;
             right: -2px;
             bottom: -2px;
-            background: linear-gradient(45deg, #F97316, #FF5A1F, #FF7A3D, #F97316);
+            background: linear-gradient(45deg, #F97316, #DC2626, #059669, #F97316);
             border-radius: inherit;
             z-index: -1;
             animation: gradient 4s linear infinite;
             background-size: 400% 400%;
         }
         
-        /* PRICING CARD ĐẶC BIỆT */
-        .pricing-card-featured {
-            background: linear-gradient(145deg, #0F0F0F, #0A0A0A);
-            border: 2px solid #F97316;
-            position: relative;
-            overflow: hidden;
+        /* Snowflake Particles */
+        .snowflake {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 1;
         }
         
-        .pricing-card-featured .price-text {
-            background: linear-gradient(90deg, #FFFFFF, #F0F0F0);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        /* Christmas Lights */
+        .christmas-light {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 3px;
+            animation: christmas-light 2s ease-in-out infinite;
         }
         
-        /* Glowing Effects */
-        .orange-glow {
-            box-shadow: 
-                0 0 40px rgba(249, 115, 22, 0.3),
-                0 0 80px rgba(249, 115, 22, 0.1),
-                inset 0 0 20px rgba(249, 115, 22, 0.1);
-        }
-        
-        .neon-glow {
-            box-shadow: 
-                0 0 30px rgba(255, 90, 31, 0.3),
-                0 0 60px rgba(255, 90, 31, 0.1),
-                inset 0 0 15px rgba(255, 90, 31, 0.1);
-        }
-        
-        .accent-glow {
-            box-shadow: 
-                0 0 30px rgba(255, 122, 61, 0.3),
-                0 0 60px rgba(255, 122, 61, 0.1),
-                inset 0 0 15px rgba(255, 122, 61, 0.1);
-        }
-        
-        /* Animated Elements */
-        .floating-element {
-            animation: float 6s ease-in-out infinite;
-        }
-        
-        .floating-element-delayed {
-            animation: float-delayed 7s ease-in-out infinite;
-        }
-        
-        /* Gradient Text */
-        .gradient-text {
-            background: linear-gradient(90deg, #F97316 0%, #FB923C 25%, #FF5A1F 50%, #FF7A3D 75%, #F97316 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-size: 200% auto;
-            animation: text-shimmer 3s ease-in-out infinite;
-        }
-        
-        .gradient-text-dark {
-            background: linear-gradient(90deg, #F97316, #FF5A1F, #FF7A3D);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        
-        .neon-text {
-            color: #FF5A1F;
-            text-shadow: 
-                0 0 10px rgba(255, 90, 31, 0.5),
-                0 0 20px rgba(255, 90, 31, 0.3),
-                0 0 30px rgba(255, 90, 31, 0.1);
-        }
-        
-        .accent-text {
-            color: #FF7A3D;
-            text-shadow: 
-                0 0 10px rgba(255, 122, 61, 0.5),
-                0 0 20px rgba(255, 122, 61, 0.3),
-                0 0 30px rgba(255, 122, 61, 0.1);
-        }
-        
-        /* Buttons - FIXED FOR CLICKABILITY */
+        /* Buttons - GIỮ NGUYÊN */
         .cyber-button,
         .cyber-button * {
             background: linear-gradient(90deg, #F97316 0%, #FB923C 100%);
@@ -375,22 +307,6 @@
                 0 15px 40px rgba(249, 115, 22, 0.4),
                 0 0 30px rgba(249, 115, 22, 0.2);
             color: #1A1A1A !important;
-        }
-        
-        .cyber-button::after {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.3) 50%, transparent 70%);
-            transform: rotate(45deg);
-            transition: transform 0.6s ease;
-        }
-        
-        .cyber-button:hover::after {
-            transform: translateY(100%) rotate(45deg);
         }
         
         .neon-button,
@@ -417,80 +333,41 @@
             color: #1A1A1A !important;
         }
         
-        .secondary-button {
-            background: linear-gradient(145deg, rgba(26, 26, 26, 0.9), rgba(15, 15, 15, 0.9));
-            color: #FFFFFF;
-            font-weight: 700;
-            border: 1px solid rgba(249, 115, 22, 0.3);
-            position: relative;
-            overflow: hidden;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        /* Gradient Text */
+        .gradient-text {
+            background: linear-gradient(90deg, #F97316 0%, #FB923C 25%, #DC2626 50%, #FB923C 75%, #F97316 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% auto;
+            animation: text-shimmer 3s ease-in-out infinite;
         }
         
-        .secondary-button:hover {
-            transform: translateY(-5px);
-            border-color: rgba(249, 115, 22, 0.5);
-            box-shadow: 0 15px 40px rgba(249, 115, 22, 0.15);
-        }
-        
-        /* Stats Counter */
-        .counter {
-            font-weight: 900;
-            font-size: 3.5rem;
-            background: linear-gradient(90deg, #F97316, #FB923C, #FF5A1F, #FF7A3D);
+        .christmas-text {
+            background: linear-gradient(90deg, #F97316, #DC2626, #059669, #F97316);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-size: 300% 100%;
             animation: gradient 4s linear infinite;
         }
         
-        /* Floating Particles */
-        .particle {
-            position: absolute;
-            width: 4px;
-            height: 4px;
-            background: rgba(249, 115, 22, 0.3);
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 1;
+        /* Header Noel */
+        .christmas-header {
+            background: rgba(5, 5, 5, 0.95) !important;
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(249, 115, 22, 0.2) !important;
         }
         
-        /* Scanline Effect */
-        .scanline {
-            position: fixed;
+        .christmas-header::before {
+            content: '';
+            position: absolute;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(to bottom, transparent 50%, rgba(255, 90, 31, 0.03) 50%);
-            background-size: 100% 4px;
-            pointer-events: none;
-            z-index: 9999;
-            opacity: 0.3;
-            animation: scanline 2s linear infinite;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #F97316, #DC2626, #059669, transparent);
         }
         
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 14px;
-        }
-        
-        ::-webkit-scrollbar-track {
-            background: #0A0A0A;
-            border-left: 1px solid rgba(249, 115, 22, 0.1);
-        }
-        
-        ::-webkit-scrollbar-thumb {
-            background: linear-gradient(180deg, #F97316, #FB923C, #FF5A1F, #FF7A3D);
-            border-radius: 8px;
-            border: 3px solid #0A0A0A;
-        }
-        
-        ::-webkit-scrollbar-thumb:hover {
-            background: linear-gradient(180deg, #FB923C, #F97316, #FF7A3D, #FF5A1F);
-        }
-        
-        /* Loading Screen */
+        /* Loading Screen Noel */
         .loading-screen {
             position: fixed;
             top: 0;
@@ -506,14 +383,14 @@
             transition: opacity 0.5s ease, visibility 0.5s ease;
         }
         
-        .loader {
+        .christmas-loader {
             width: 80px;
             height: 80px;
             position: relative;
             margin-bottom: 30px;
         }
         
-        .loader-ring {
+        .loader-snowflake {
             position: absolute;
             width: 100%;
             height: 100%;
@@ -523,19 +400,24 @@
             animation: spin 1.5s linear infinite;
         }
         
-        .loader-ring:nth-child(2) {
-            border-top-color: #FF5A1F;
+        .loader-snowflake:nth-child(2) {
+            border-top-color: #DC2626;
             animation-delay: 0.5s;
         }
         
-        .loader-ring:nth-child(3) {
-            border-top-color: #FF7A3D;
+        .loader-snowflake:nth-child(3) {
+            border-top-color: #059669;
             animation-delay: 1s;
         }
         
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
+        }
+        
+        @keyframes text-shimmer {
+            0% { background-position: 200% center; }
+            100% { background-position: -200% center; }
         }
         
         /* Responsive */
@@ -566,95 +448,88 @@
         button, .btn, .button, [role="button"] {
             cursor: pointer !important;
         }
-        
-        /* Đảm bảo các nút trong pricing section hoạt động */
-        #pricing a,
-        #pricing .cyber-button,
-        #pricing .neon-button {
-            text-decoration: none !important;
-            cursor: pointer !important;
-            display: block;
-            width: 100%;
-        }
-        
-        #pricing a:hover {
-            text-decoration: none !important;
-        }
-        
-        /* Fix cho các button có thẻ <a> */
-        a.cyber-button,
-        a.neon-button {
-            display: flex !important;
-            align-items: center;
-            justify-content: center;
-        }
     </style>
 </head>
 
 <body class="relative">
     <!-- Loading Screen -->
     <div id="loadingScreen" class="loading-screen">
-        <div class="loader">
-            <div class="loader-ring"></div>
-            <div class="loader-ring"></div>
-            <div class="loader-ring"></div>
+        <div class="christmas-loader">
+            <div class="loader-snowflake"></div>
+            <div class="loader-snowflake"></div>
+            <div class="loader-snowflake"></div>
         </div>
-        <h2 class="gradient-text text-3xl font-bold mt-8">MAX KERNEL CHEAT</h2>
-        <p class="text-textSub mt-4">Đang tải giải pháp gaming cao cấp...</p>
+        <h2 class="christmas-text text-3xl font-bold mt-8">MAX KERNEL CHEAT</h2>
+        <p class="text-textSub mt-4">🎄 Chào mừng đến với mùa Giáng Sinh 🎄</p>
     </div>
     
-    <!-- Scanline Effect -->
-    <div class="scanline"></div>
+    <!-- Snowfall Container -->
+    <div id="snowfall-container"></div>
+    
+    <!-- Christmas Lights String -->
+    <div id="christmas-lights" class="fixed top-0 left-0 w-full h-4 z-50 flex justify-around pointer-events-none opacity-50">
+        <div class="christmas-light" style="background: #F97316; animation-delay: 0s;"></div>
+        <div class="christmas-light" style="background: #DC2626; animation-delay: 0.2s;"></div>
+        <div class="christmas-light" style="background: #059669; animation-delay: 0.4s;"></div>
+        <div class="christmas-light" style="background: #F97316; animation-delay: 0.6s;"></div>
+        <div class="christmas-light" style="background: #DC2626; animation-delay: 0.8s;"></div>
+        <div class="christmas-light" style="background: #059669; animation-delay: 1s;"></div>
+        <div class="christmas-light" style="background: #F97316; animation-delay: 1.2s;"></div>
+    </div>
     
     <!-- Header -->
-    <header id="header" class="fixed top-0 w-full z-50 bg-dark/95 backdrop-blur-xl border-b border-orange-500/10 transition-all duration-500">
+    <header id="header" class="fixed top-0 w-full z-50 christmas-header transition-all duration-500">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-5">
-                <!-- Logo -->
+                <!-- Logo - GIỮ NGUYÊN logo.png -->
                 <div class="flex items-center gap-4">
                     <div class="logo-container relative group">
-                        <div class="absolute -inset-2 bg-gradient-to-r from-orange-500 to-neon-500 rounded-full opacity-75 blur group-hover:opacity-100 transition duration-500"></div>
+                        <div class="absolute -inset-2 bg-gradient-to-r from-orange-500 to-christmas-red rounded-full opacity-75 blur group-hover:opacity-100 transition duration-500"></div>
                         <img src="logo.png" 
                              alt="MAX KERNEL CHEAT Logo" 
                              class="w-14 h-14 rounded-full object-cover relative z-10 border-2 border-dark">
+                        <!-- Christmas decoration on logo -->
+                        <div class="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-christmas-red flex items-center justify-center">
+                            <i class="fas fa-star text-xs text-white animate-star-sparkle"></i>
+                        </div>
                     </div>
                     <div>
-                        <h1 class="font-black text-2xl tracking-tighter gradient-text">
+                        <h1 class="font-black text-2xl tracking-tighter christmas-text">
                             MAX KERNEL CHEAT
                         </h1>
                         <p class="text-xs text-textSub font-medium tracking-wider">GIẢI PHÁP KERNEL CAO CẤP</p>
                     </div>
                 </div>
                 
-                <!-- Navigation -->
+                <!-- Navigation - GIỮ NGUYÊN -->
                 <nav class="hidden lg:flex items-center gap-10">
                     <a href="#home" class="group relative text-textSub hover:text-orange-500 transition-all duration-300 font-medium text-sm tracking-wider">
                         <span class="relative z-10">TRANG CHỦ</span>
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-orange-500 to-neon-500 group-hover:w-full transition-all duration-500"></span>
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-orange-500 to-christmas-red group-hover:w-full transition-all duration-500"></span>
                     </a>
                     <a href="#features" class="group relative text-textSub hover:text-orange-500 transition-all duration-300 font-medium text-sm tracking-wider">
                         <span class="relative z-10">TÍNH NĂNG</span>
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-orange-500 to-neon-500 group-hover:w-full transition-all duration-500"></span>
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-orange-500 to-christmas-red group-hover:w-full transition-all duration-500"></span>
                     </a>
                     <a href="#pricing" class="group relative text-textSub hover:text-orange-500 transition-all duration-300 font-medium text-sm tracking-wider">
                         <span class="relative z-10">BẢNG GIÁ</span>
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-orange-500 to-neon-500 group-hover:w-full transition-all duration-500"></span>
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-orange-500 to-christmas-red group-hover:w-full transition-all duration-500"></span>
                     </a>
                     <a href="#support" class="group relative text-textSub hover:text-orange-500 transition-all duration-300 font-medium text-sm tracking-wider">
                         <span class="relative z-10">HỖ TRỢ</span>
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-orange-500 to-neon-500 group-hover:w-full transition-all duration-500"></span>
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-orange-500 to-christmas-red group-hover:w-full transition-all duration-500"></span>
                     </a>
                     <a href="#dealers" class="group relative text-textSub hover:text-orange-500 transition-all duration-300 font-medium text-sm tracking-wider">
                         <span class="relative z-10">DEALER</span>
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-orange-500 to-neon-500 group-hover:w-full transition-all duration-500"></span>
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-orange-500 to-christmas-red group-hover:w-full transition-all duration-500"></span>
                     </a>
                 </nav>
                 
-                <!-- CTA Button -->
+                <!-- CTA Button - GIỮ NGUYÊN -->
                 <div class="flex items-center gap-6">
                     <a href="https://t.me/mdkeyy" 
                        target="_blank"
-                       class="hidden lg:flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-orange-600/20 to-neon-500/20 border border-orange-600/30 rounded-xl hover:border-orange-500/50 hover:scale-105 transition-all duration-300 group cursor-pointer">
+                       class="hidden lg:flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-orange-600/20 to-christmas-red/20 border border-orange-600/30 rounded-xl hover:border-orange-500/50 hover:scale-105 transition-all duration-300 group cursor-pointer">
                         <i class="fas fa-headset text-orange-500"></i>
                         <span class="font-bold text-sm tracking-wider">HỖ TRỢ VIP</span>
                     </a>
@@ -672,7 +547,7 @@
             </div>
         </div>
         
-        <!-- Mobile Menu -->
+        <!-- Mobile Menu - GIỮ NGUYÊN -->
         <div id="mobile-menu" class="lg:hidden hidden bg-premium/95 backdrop-blur-xl border-t border-orange-500/10">
             <div class="container mx-auto px-4 py-8">
                 <div class="flex flex-col gap-6">
@@ -707,23 +582,24 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="relative cyber-grid pt-44 pb-32 overflow-hidden">
-        <!-- Floating Particles -->
-        <div id="particles-container"></div>
-        
-        <!-- Background Elements -->
-        <div class="absolute top-0 left-0 w-full h-full overflow-hidden">
-            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl floating-element"></div>
-            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-orange-700/5 rounded-full blur-3xl floating-element-delayed"></div>
-            <div class="absolute top-1/3 right-1/3 w-64 h-64 bg-neon-500/5 rounded-full blur-3xl floating-element" style="animation-delay: 2s;"></div>
+    <section id="home" class="relative christmas-bg pt-44 pb-32 overflow-hidden">
+        <!-- Floating Christmas Elements -->
+        <div class="absolute top-10 left-10 w-8 h-8 text-christmas-red animate-float opacity-50">
+            <i class="fas fa-star animate-twinkle"></i>
+        </div>
+        <div class="absolute top-20 right-20 w-6 h-6 text-christmas-green animate-float opacity-50" style="animation-delay: 0.5s;">
+            <i class="fas fa-snowflake"></i>
+        </div>
+        <div class="absolute bottom-40 left-1/4 w-6 h-6 text-orange-500 animate-float opacity-50" style="animation-delay: 1s;">
+            <i class="fas fa-star"></i>
         </div>
         
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <!-- Left Content -->
+                <!-- Left Content - GIỮ NGUYÊN NỘI DUNG -->
                 <div data-aos="fade-right" data-aos-delay="200">
-                    <div class="inline-flex items-center gap-3 mb-8 px-6 py-3 bg-gradient-to-r from-orange-500/10 to-orange-700/10 border border-orange-500/20 rounded-2xl backdrop-blur-sm animate-pulse">
-                        <div class="w-3 h-3 rounded-full bg-neon-500 animate-ping"></div>
+                    <div class="inline-flex items-center gap-3 mb-8 px-6 py-3 bg-gradient-to-r from-orange-500/10 to-christmas-red/10 border border-orange-500/20 rounded-2xl backdrop-blur-sm animate-pulse">
+                        <div class="w-3 h-3 rounded-full bg-orange-500 animate-ping"></div>
                         <span class="text-orange-500 font-bold tracking-widest text-sm">GIẢI PHÁP KERNEL CAO CẤP</span>
                     </div>
                     
@@ -749,7 +625,7 @@
                         </a>
                     </div>
                     
-                    <!-- Stats -->
+                    <!-- Stats - GIỮ NGUYÊN -->
                     <div class="grid grid-cols-3 gap-8">
                         <div class="text-center">
                             <div class="counter mb-2">10K+</div>
@@ -766,25 +642,25 @@
                     </div>
                 </div>
                 
-                <!-- Right Content - Dealers -->
+                <!-- Right Content - Dealers - GIỮ NGUYÊN NỘI DUNG -->
                 <div data-aos="fade-left" data-aos-delay="400">
                     <div class="premium-card rounded-3xl p-10 orange-glow relative">
                         <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                            <div class="px-6 py-2 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full animate-pulse">
+                            <div class="px-6 py-2 bg-gradient-to-r from-orange-500 to-christmas-red rounded-full animate-pulse">
                                 <span class="font-black text-dark text-sm tracking-wider">DEALER CHÍNH THỨC</span>
                             </div>
                         </div>
                         
                         <div class="text-center mb-10">
                             <div class="w-20 h-20 mx-auto mb-6 logo-container relative group">
-                                <div class="absolute -inset-2 bg-gradient-to-r from-orange-500 to-neon-500 rounded-full opacity-75 blur group-hover:opacity-100 transition duration-500"></div>
+                                <div class="absolute -inset-2 bg-gradient-to-r from-orange-500 to-christmas-red rounded-full opacity-75 blur group-hover:opacity-100 transition duration-500"></div>
                                 <img src="logo.png" alt="Logo" class="w-full h-full rounded-full object-cover relative z-10 border-2 border-dark">
                             </div>
                             <h3 class="text-2xl font-black mb-2">ĐẠI LÝ ỦY QUYỀN</h3>
                             <p class="text-textSub">Liên hệ chính thức để mua hàng</p>
                         </div>
                         
-                        <!-- Dealer 1 -->
+                        <!-- Dealer 1 - GIỮ NGUYÊN -->
                         <div class="premium-card rounded-2xl p-6 mb-6 hover:scale-[1.02] transition-transform duration-300">
                             <div class="flex justify-between items-center">
                                 <div class="flex items-center gap-4">
@@ -798,7 +674,7 @@
                                         <p class="text-textSub text-sm">@mdkeyy</p>
                                         <div class="flex gap-2 mt-2">
                                             <span class="px-2 py-1 bg-orange-500/20 text-orange-500 text-xs rounded">CHÍNH THỨC</span>
-                                            <span class="px-2 py-1 bg-neon-500/20 text-neon-500 text-xs rounded">ONLINE</span>
+                                            <span class="px-2 py-1 bg-christmas-red/20 text-christmas-red text-xs rounded">ONLINE</span>
                                         </div>
                                     </div>
                                 </div>
@@ -810,13 +686,13 @@
                             </div>
                         </div>
                         
-                        <!-- Dealer 2 -->
+                        <!-- Dealer 2 - GIỮ NGUYÊN -->
                         <div class="premium-card rounded-2xl p-6 hover:scale-[1.02] transition-transform duration-300">
                             <div class="flex justify-between items-center">
                                 <div class="flex items-center gap-4">
-                                    <div class="w-14 h-14 rounded-full bg-gradient-to-br from-accent-500 to-neon-500 p-0.5">
+                                    <div class="w-14 h-14 rounded-full bg-gradient-to-br from-orange-500 to-christmas-red p-0.5">
                                         <div class="w-full h-full rounded-full bg-dark flex items-center justify-center">
-                                            <i class="fas fa-headset text-accent-500 text-xl"></i>
+                                            <i class="fas fa-headset text-orange-500 text-xl"></i>
                                         </div>
                                     </div>
                                     <div>
@@ -824,13 +700,13 @@
                                         <p class="text-textSub text-sm">@chien137</p>
                                         <div class="flex gap-2 mt-2">
                                             <span class="px-2 py-1 bg-orange-500/20 text-orange-500 text-xs rounded">CHÍNH THỨC</span>
-                                            <span class="px-2 py-1 bg-accent-500/20 text-accent-500 text-xs rounded">HỖ TRỢ 24/7</span>
+                                            <span class="px-2 py-1 bg-christmas-red/20 text-christmas-red text-xs rounded">HỖ TRỢ 24/7</span>
                                         </div>
                                     </div>
                                 </div>
                                 <a href="https://t.me/chien137" 
                                    target="_blank"
-                                   class="neon-button px-6 py-3 rounded-lg text-sm font-bold cursor-pointer">
+                                   class="cyber-button px-6 py-3 rounded-lg text-sm font-bold cursor-pointer">
                                     LIÊN HỆ
                                 </a>
                             </div>
@@ -848,12 +724,12 @@
         </div>
     </section>
 
-    <!-- Features Section -->
+    <!-- Features Section - GIỮ NGUYÊN NỘI DUNG -->
     <section id="features" class="section-padding relative">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
             <div class="text-center mb-20" data-aos="fade-up">
-                <div class="inline-flex items-center gap-3 mb-6 px-6 py-3 bg-gradient-to-r from-orange-500/10 to-accent-500/10 border border-orange-500/20 rounded-2xl animate-pulse">
+                <div class="inline-flex items-center gap-3 mb-6 px-6 py-3 bg-gradient-to-r from-orange-500/10 to-christmas-red/10 border border-orange-500/20 rounded-2xl animate-pulse">
                     <i class="fas fa-crown text-orange-500"></i>
                     <span class="text-orange-500 font-bold tracking-widest">TÍNH NĂNG CAO CẤP</span>
                 </div>
@@ -866,7 +742,7 @@
                 </p>
             </div>
             
-            <!-- Features Grid -->
+            <!-- Features Grid - GIỮ NGUYÊN -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Feature 1 -->
                 <div class="premium-card rounded-3xl p-8" data-aos="zoom-in">
@@ -885,14 +761,14 @@
                 
                 <!-- Feature 2 -->
                 <div class="premium-card rounded-3xl p-8" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-neon-500 to-accent-500 flex items-center justify-center mb-6 animate-pulse">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-christmas-red to-christmas-green flex items-center justify-center mb-6 animate-pulse">
                         <i class="fas fa-shield-alt text-2xl text-dark"></i>
                     </div>
                     <h3 class="text-2xl font-black mb-4">VƯỢT ANTI-CHEAT</h3>
                     <p class="text-textSub mb-6">
                         Hệ thống chống phát hiện tiên tiến, vượt qua mọi hệ thống anti-cheat
                     </p>
-                    <div class="flex items-center text-neon-500 font-bold">
+                    <div class="flex items-center text-christmas-red font-bold">
                         <i class="fas fa-check-circle mr-2"></i>
                         <span>AN TOÀN TUYỆT ĐỐI</span>
                     </div>
@@ -900,14 +776,14 @@
                 
                 <!-- Feature 3 -->
                 <div class="premium-card rounded-3xl p-8" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-accent-500 to-neon-500 flex items-center justify-center mb-6 animate-pulse">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-christmas-green to-orange-500 flex items-center justify-center mb-6 animate-pulse">
                         <i class="fas fa-bolt text-2xl text-dark"></i>
                     </div>
                     <h3 class="text-2xl font-black mb-4">TỐI ƯU HIỆU SUẤT</h3>
                     <p class="text-textSub mb-6">
                         Không ảnh hưởng đến hiệu suất hệ thống, hoạt động mượt mà
                     </p>
-                    <div class="flex items-center text-accent-500 font-bold">
+                    <div class="flex items-center text-christmas-green font-bold">
                         <i class="fas fa-check-circle mr-2"></i>
                         <span>KHÔNG GIẬT LAG</span>
                     </div>
@@ -915,7 +791,7 @@
                 
                 <!-- Feature 4 -->
                 <div class="premium-card rounded-3xl p-8" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-orange-600 to-orange-500 flex items-center justify-center mb-6 animate-pulse">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-orange-600 to-christmas-red flex items-center justify-center mb-6 animate-pulse">
                         <i class="fas fa-crosshairs text-2xl text-dark"></i>
                     </div>
                     <h3 class="text-2xl font-black mb-4">AIMBOT THÔNG MINH</h3>
@@ -930,14 +806,14 @@
                 
                 <!-- Feature 5 -->
                 <div class="premium-card rounded-3xl p-8" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-neon-500 to-orange-500 flex items-center justify-center mb-6 animate-pulse">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-christmas-red to-orange-500 flex items-center justify-center mb-6 animate-pulse">
                         <i class="fas fa-eye-slash text-2xl text-dark"></i>
                     </div>
                     <h3 class="text-2xl font-black mb-4">AN TOÀN KHI STREAM</h3>
                     <p class="text-textSub mb-6">
                         Ẩn hoàn toàn khi livestream và quay video, đảm bảo an toàn
                     </p>
-                    <div class="flex items-center text-neon-500 font-bold">
+                    <div class="flex items-center text-christmas-red font-bold">
                         <i class="fas fa-check-circle mr-2"></i>
                         <span>KHÔNG BỊ LỘ</span>
                     </div>
@@ -945,21 +821,21 @@
                 
                 <!-- Feature 6 -->
                 <div class="premium-card rounded-3xl p-8" data-aos="zoom-in" data-aos-delay="500">
-                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-accent-500 to-orange-600 flex items-center justify-center mb-6 animate-pulse">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-orange-500 to-christmas-green flex items-center justify-center mb-6 animate-pulse">
                         <i class="fas fa-sync-alt text-2xl text-dark"></i>
                     </div>
                     <h3 class="text-2xl font-black mb-4">TỰ ĐỘNG CẬP NHẬT</h3>
                     <p class="text-textSub mb-6">
                         Tự động cập nhật để tương thích với các phiên bản game mới nhất
                     </p>
-                    <div class="flex items-center text-accent-500 font-bold">
+                    <div class="flex items-center text-orange-500 font-bold">
                         <i class="fas fa-check-circle mr-2"></i>
                         <span>LUÔN MỚI NHẤT</span>
                     </div>
                 </div>
             </div>
             
-            <!-- Stats -->
+            <!-- Stats - GIỮ NGUYÊN -->
             <div class="mt-20 grid grid-cols-2 lg:grid-cols-4 gap-8" data-aos="fade-up">
                 <div class="text-center">
                     <div class="counter mb-4">100%</div>
@@ -981,12 +857,12 @@
         </div>
     </section>
 
-    <!-- Pricing Section - TẤT CẢ NÚT ĐỀU HOẠT ĐỘNG 100% -->
-    <section id="pricing" class="section-padding cyber-grid relative">
+    <!-- Pricing Section - GIỮ NGUYÊN NỘI DUNG -->
+    <section id="pricing" class="section-padding christmas-bg relative">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
             <div class="text-center mb-20" data-aos="fade-up">
-                <div class="inline-flex items-center gap-3 mb-6 px-6 py-3 bg-gradient-to-r from-orange-500/10 to-accent-500/10 border border-orange-500/20 rounded-2xl animate-pulse">
+                <div class="inline-flex items-center gap-3 mb-6 px-6 py-3 bg-gradient-to-r from-orange-500/10 to-christmas-red/10 border border-orange-500/20 rounded-2xl animate-pulse">
                     <i class="fas fa-gem text-orange-500"></i>
                     <span class="text-orange-500 font-bold tracking-widest">GÓI DỊCH VỤ VIP</span>
                 </div>
@@ -999,9 +875,9 @@
                 </p>
             </div>
             
-            <!-- Pricing Cards - TẤT CẢ NÚT CÓ LINK THẬT -->
+            <!-- Pricing Cards - GIỮ NGUYÊN -->
             <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <!-- Gói 24H - LINK TẢI VỀ THẬT -->
+                <!-- Gói 24H -->
                 <div class="premium-card rounded-3xl p-10 text-center" data-aos="fade-up">
                     <div class="mb-10">
                         <h3 class="text-2xl font-black mb-4 text-white">GÓI 24H</h3>
@@ -1031,7 +907,6 @@
                         </div>
                     </div>
                     
-                    <!-- LINK THẬT CHO GÓI 24H -->
                     <a href="https://t.me/chien137?start=package_24h" 
                        target="_blank"
                        class="cyber-button block w-full py-4 rounded-xl font-black text-lg cursor-pointer">
@@ -1039,10 +914,10 @@
                     </a>
                 </div>
                 
-                <!-- Gói 30 Ngày - Featured - LINK MUA HÀNG THẬT -->
-                <div class="pricing-card-featured rounded-3xl p-10 text-center relative scale-120" data-aos="fade-up" data-aos-delay="100">
+                <!-- Gói 30 Ngày - Featured -->
+                <div class="featured-card rounded-3xl p-10 text-center relative scale-120" data-aos="fade-up" data-aos-delay="100">
                     <div class="absolute -top-5 left-1/2 transform -translate-x-1/2">
-                        <div class="px-0.5 py-5 bg-gradient-to-r from-orange-500 to-orange-500 rounded-full animate-pulse">
+                        <div class="px-0.5 py-5 bg-gradient-to-r from-orange-500 to-christmas-red rounded-full animate-pulse">
                             <span class="font-black text-white text-sm tracking-wider">PHỔ BIẾN NHẤT</span>
                         </div>
                     </div>
@@ -1079,7 +954,6 @@
                         </div>
                     </div>
                     
-                    <!-- LINK THẬT CHO GÓI 30 NGÀY -->
                     <a href="https://t.me/chien137?start=package_30days" 
                        target="_blank"
                        class="cyber-button block w-full py-4 rounded-xl font-black text-lg cursor-pointer">
@@ -1087,11 +961,11 @@
                     </a>
                 </div>
                 
-                <!-- Gói Dài Hạn - LINK TƯ VẤN THẬT -->
+                <!-- Gói Dài Hạn -->
                 <div class="premium-card rounded-3xl p-10 text-center" data-aos="fade-up" data-aos-delay="200">
                     <div class="mb-10">
                         <h3 class="text-2xl font-black mb-4 text-white">GÓI DÀI HẠN</h3>
-                        <div class="text-accent-500 font-bold mb-6">Lifetime Access</div>
+                        <div class="text-christmas-red font-bold mb-6">Lifetime Access</div>
                         
                         <div class="mb-10">
                             <div class="flex justify-center items-baseline mb-4">
@@ -1102,25 +976,24 @@
                         
                         <div class="space-y-4 mb-10">
                             <div class="flex items-center justify-center gap-3">
-                                <i class="fas fa-infinity text-accent-500"></i>
+                                <i class="fas fa-infinity text-christmas-red"></i>
                                 <span class="font-bold text-white">Sử dụng trọn đời</span>
                             </div>
                             <div class="flex items-center justify-center gap-3">
-                                <i class="fas fa-headset text-accent-500"></i>
+                                <i class="fas fa-headset text-christmas-red"></i>
                                 <span class="text-white">Hỗ trợ chuyên dụng</span>
                             </div>
                             <div class="flex items-center justify-center gap-3">
-                                <i class="fas fa-rocket text-accent-500"></i>
+                                <i class="fas fa-rocket text-christmas-red"></i>
                                 <span class="text-white">Tối ưu phần cứng</span>
                             </div>
                             <div class="flex items-center justify-center gap-3">
-                                <i class="fas fa-lock text-accent-500"></i>
+                                <i class="fas fa-lock text-christmas-red"></i>
                                 <span class="text-white">Bảo mật tối đa</span>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- LINK THẬT CHO TƯ VẤN -->
                     <a href="https://t.me/chien137?start=consultation" 
                        target="_blank"
                        class="cyber-button block w-full py-4 rounded-xl font-black text-lg cursor-pointer">
@@ -1129,7 +1002,7 @@
                 </div>
             </div>
             
-            <!-- Payment Methods -->
+            <!-- Payment Methods - GIỮ NGUYÊN -->
             <div class="mt-20 text-center" data-aos="fade-up">
                 <h4 class="text-2xl font-black mb-10 gradient-text">PHƯƠNG THỨC THANH TOÁN</h4>
                 <div class="flex flex-wrap justify-center gap-8">
@@ -1138,15 +1011,15 @@
                         <p class="font-bold">Chuyển khoản ngân hàng</p>
                     </div>
                     <div class="premium-card rounded-2xl p-6 hover:scale-105 transition-transform duration-300">
-                        <i class="fas fa-mobile-alt text-4xl text-accent-500 mb-4"></i>
+                        <i class="fas fa-mobile-alt text-4xl text-christmas-red mb-4"></i>
                         <p class="font-bold">Ví MoMo</p>
                     </div>
                     <div class="premium-card rounded-2xl p-6 hover:scale-105 transition-transform duration-300">
-                        <i class="fab fa-telegram text-4xl text-neon-500 mb-4"></i>
+                        <i class="fab fa-telegram text-4xl text-orange-500 mb-4"></i>
                         <p class="font-bold">Thanh toán qua Telegram</p>
                     </div>
                     <div class="premium-card rounded-2xl p-6 hover:scale-105 transition-transform duration-300">
-                        <i class="fas fa-coins text-4xl text-orange-500 mb-4"></i>
+                        <i class="fas fa-coins text-4xl text-christmas-green mb-4"></i>
                         <p class="font-bold">Tiền điện tử</p>
                     </div>
                 </div>
@@ -1154,14 +1027,14 @@
         </div>
     </section>
 
-    <!-- Support Section -->
+    <!-- Support Section - GIỮ NGUYÊN NỘI DUNG -->
     <section id="support" class="section-padding relative">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
             <div class="text-center mb-20" data-aos="fade-up">
-                <div class="inline-flex items-center gap-3 mb-6 px-6 py-3 bg-gradient-to-r from-accent-500/10 to-neon-500/10 border border-accent-500/20 rounded-2xl animate-pulse">
-                    <i class="fas fa-headset text-accent-500"></i>
-                    <span class="text-accent-500 font-bold tracking-widest">HỖ TRỢ 24/7</span>
+                <div class="inline-flex items-center gap-3 mb-6 px-6 py-3 bg-gradient-to-r from-orange-500/10 to-christmas-red/10 border border-orange-500/20 rounded-2xl animate-pulse">
+                    <i class="fas fa-headset text-orange-500"></i>
+                    <span class="text-orange-500 font-bold tracking-widest">HỖ TRỢ 24/7</span>
                 </div>
                 <h2 class="text-6xl md:text-7xl font-black mb-6">
                     <span class="gradient-text">HỖ TRỢ</span>
@@ -1172,7 +1045,7 @@
                 </p>
             </div>
             
-            <!-- Support Grid -->
+            <!-- Support Grid - GIỮ NGUYÊN -->
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Documentation -->
                 <div class="premium-card rounded-3xl p-10 text-center" data-aos="fade-up">
@@ -1193,7 +1066,7 @@
                 
                 <!-- Community -->
                 <div class="premium-card rounded-3xl p-10 text-center" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-20 h-20 mx-auto mb-8 rounded-2xl bg-gradient-to-br from-accent-500 to-neon-500 flex items-center justify-center animate-pulse">
+                    <div class="w-20 h-20 mx-auto mb-8 rounded-2xl bg-gradient-to-br from-christmas-red to-christmas-green flex items-center justify-center animate-pulse">
                         <i class="fab fa-telegram text-3xl text-dark"></i>
                     </div>
                     <h3 class="text-2xl font-black mb-6 text-white">CỘNG ĐỒNG TELEGRAM</h3>
@@ -1210,7 +1083,7 @@
                 
                 <!-- Technical Support -->
                 <div class="premium-card rounded-3xl p-10 text-center" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-20 h-20 mx-auto mb-8 rounded-2xl bg-gradient-to-br from-neon-500 to-accent-500 flex items-center justify-center animate-pulse">
+                    <div class="w-20 h-20 mx-auto mb-8 rounded-2xl bg-gradient-to-br from-christmas-green to-orange-500 flex items-center justify-center animate-pulse">
                         <i class="fas fa-headset text-3xl text-dark"></i>
                     </div>
                     <h3 class="text-2xl font-black mb-6 text-white">HỖ TRỢ TRỰC TIẾP</h3>
@@ -1232,28 +1105,28 @@
                 </div>
             </div>
             
-            <!-- Live Support -->
+            <!-- Live Support - GIỮ NGUYÊN -->
             <div class="mt-20 premium-card rounded-3xl p-10" data-aos="fade-up">
                 <div class="grid lg:grid-cols-2 gap-10 items-center">
                     <div>
                         <h3 class="text-3xl font-black mb-6 gradient-text">TÌNH TRẠNG HỖ TRỢ</h3>
                         <div class="space-y-6">
                             <div class="flex items-center gap-4">
-                                <div class="w-3 h-3 rounded-full bg-neon-500 animate-pulse"></div>
+                                <div class="w-3 h-3 rounded-full bg-orange-500 animate-pulse"></div>
                                 <div>
                                     <p class="font-bold">Thời gian phản hồi trung bình</p>
                                     <p class="text-textSub">Dưới 5 phút</p>
                                 </div>
                             </div>
                             <div class="flex items-center gap-4">
-                                <div class="w-3 h-3 rounded-full bg-orange-500 animate-pulse" style="animation-delay: 0.5s;"></div>
+                                <div class="w-3 h-3 rounded-full bg-christmas-red animate-pulse" style="animation-delay: 0.5s;"></div>
                                 <div>
                                     <p class="font-bold">Thời gian hỗ trợ</p>
                                     <p class="text-textSub">24/7 cả năm</p>
                                 </div>
                             </div>
                             <div class="flex items-center gap-4">
-                                <div class="w-3 h-3 rounded-full bg-accent-500 animate-pulse" style="animation-delay: 1s;"></div>
+                                <div class="w-3 h-3 rounded-full bg-christmas-green animate-pulse" style="animation-delay: 1s;"></div>
                                 <div>
                                     <p class="font-bold">Tỷ lệ giải quyết</p>
                                     <p class="text-textSub">99.8% thành công</p>
@@ -1263,14 +1136,14 @@
                     </div>
                     <div class="text-center">
                         <div class="w-32 h-32 mx-auto mb-6 logo-container relative group">
-                            <div class="absolute -inset-2 bg-gradient-to-r from-orange-500 to-neon-500 rounded-full opacity-75 blur group-hover:opacity-100 transition duration-500"></div>
+                            <div class="absolute -inset-2 bg-gradient-to-r from-orange-500 to-christmas-red rounded-full opacity-75 blur group-hover:opacity-100 transition duration-500"></div>
                             <img src="logo.png" alt="Logo" class="w-full h-full rounded-full object-cover relative z-10 border-2 border-dark">
                         </div>
                         <h4 class="text-2xl font-black mb-4 text-white">MAX KERNEL CHEAT</h4>
                         <p class="text-textSub mb-6">Hỗ trợ cao cấp luôn hoạt động</p>
-                        <div class="inline-flex items-center gap-2 px-6 py-3 bg-neon-500/10 rounded-xl">
-                            <div class="w-2 h-2 rounded-full bg-neon-500 animate-ping"></div>
-                            <span class="font-bold text-neon-500">ĐANG HOẠT ĐỘNG</span>
+                        <div class="inline-flex items-center gap-2 px-6 py-3 bg-orange-500/10 rounded-xl">
+                            <div class="w-2 h-2 rounded-full bg-orange-500 animate-ping"></div>
+                            <span class="font-bold text-orange-500">ĐANG HOẠT ĐỘNG</span>
                         </div>
                     </div>
                 </div>
@@ -1278,15 +1151,15 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer - GIỮ NGUYÊN NỘI DUNG -->
     <footer class="py-16 bg-darker border-t border-orange-500/10">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-3 gap-12 mb-12">
-                <!-- Brand Info -->
+                <!-- Brand Info - GIỮ NGUYÊN LOGO -->
                 <div>
                     <div class="flex items-center gap-4 mb-6">
                         <div class="logo-container relative group">
-                            <div class="absolute -inset-2 bg-gradient-to-r from-orange-500 to-neon-500 rounded-full opacity-75 blur group-hover:opacity-100 transition duration-500"></div>
+                            <div class="absolute -inset-2 bg-gradient-to-r from-orange-500 to-christmas-red rounded-full opacity-75 blur group-hover:opacity-100 transition duration-500"></div>
                             <img src="logo.png" alt="Logo" class="w-12 h-12 rounded-full object-cover relative z-10 border-2 border-dark">
                         </div>
                         <div>
@@ -1307,17 +1180,17 @@
                         <a href="https://t.me/chien137" 
                            target="_blank"
                            class="premium-card w-12 h-12 rounded-xl flex items-center justify-center hover:scale-110 transition-transform duration-300 cursor-pointer">
-                            <i class="fas fa-headset text-xl text-accent-500"></i>
+                            <i class="fas fa-headset text-xl text-christmas-red"></i>
                         </a>
                         <a href="https://t.me/mdkeyy" 
                            target="_blank"
                            class="premium-card w-12 h-12 rounded-xl flex items-center justify-center hover:scale-110 transition-transform duration-300 cursor-pointer">
-                            <i class="fas fa-user-tie text-xl text-neon-500"></i>
+                            <i class="fas fa-user-tie text-xl text-christmas-green"></i>
                         </a>
                     </div>
                 </div>
                 
-                <!-- Quick Links -->
+                <!-- Quick Links - GIỮ NGUYÊN -->
                 <div>
                     <h4 class="font-bold text-xl mb-8 gradient-text">LIÊN KẾT NHANH</h4>
                     <div class="grid grid-cols-2 gap-4">
@@ -1334,7 +1207,7 @@
                     </div>
                 </div>
                 
-                <!-- Contact Info -->
+                <!-- Contact Info - GIỮ NGUYÊN -->
                 <div>
                     <h4 class="font-bold text-xl mb-8 neon-text">LIÊN HỆ</h4>
                     <div class="space-y-4">
@@ -1438,39 +1311,66 @@
             });
         });
         
-        // Create floating particles
-        function createParticles() {
-            const container = document.getElementById('particles-container');
+        // Create snowfall
+        function createSnowfall() {
+            const container = document.getElementById('snowfall-container');
             if (!container) return;
             
-            const particleCount = 30;
+            const snowflakeCount = 60;
             
-            for (let i = 0; i < particleCount; i++) {
-                const particle = document.createElement('div');
-                particle.classList.add('particle');
+            for (let i = 0; i < snowflakeCount; i++) {
+                const snowflake = document.createElement('div');
+                snowflake.classList.add('snowflake');
                 
                 // Random position
-                particle.style.left = `${Math.random() * 100}%`;
-                particle.style.top = `${Math.random() * 100}%`;
+                snowflake.style.left = `${Math.random() * 100}%`;
+                snowflake.style.top = `${Math.random() * -100}px`;
                 
                 // Random size
-                const size = Math.random() * 3 + 1;
-                particle.style.width = `${size}px`;
-                particle.style.height = `${size}px`;
+                const size = Math.random() * 5 + 2;
+                snowflake.style.width = `${size}px`;
+                snowflake.style.height = `${size}px`;
                 
                 // Random opacity
-                particle.style.opacity = Math.random() * 0.5 + 0.2;
+                snowflake.style.opacity = Math.random() * 0.6 + 0.2;
                 
                 // Random animation
-                const animationType = Math.random() > 0.5 ? 'particle-float' : 'particle-float-reverse';
-                const duration = Math.random() * 20 + 15;
-                particle.style.animation = `${animationType} ${duration}s linear infinite`;
+                const animationType = Math.random() > 0.33 ? 'snowfall' : 
+                                    Math.random() > 0.5 ? 'snowfall-slow' : 'snowfall-fast';
+                const duration = Math.random() * 10 + 10;
+                snowflake.style.animation = `${animationType} ${duration}s linear infinite`;
                 
-                // Random color
-                const colors = ['rgba(249, 115, 22, 0.3)', 'rgba(255, 90, 31, 0.3)', 'rgba(255, 122, 61, 0.3)'];
-                particle.style.background = colors[Math.floor(Math.random() * colors.length)];
+                // Random animation delay
+                snowflake.style.animationDelay = `${Math.random() * 5}s`;
                 
-                container.appendChild(particle);
+                container.appendChild(snowflake);
+            }
+        }
+        
+        // Create Christmas lights
+        function createChristmasLights() {
+            const lightsContainer = document.getElementById('christmas-lights');
+            if (!lightsContainer) return;
+            
+            // Clear existing lights
+            lightsContainer.innerHTML = '';
+            
+            // Create more lights for better coverage
+            const lightCount = Math.floor(window.innerWidth / 40);
+            
+            for (let i = 0; i < lightCount; i++) {
+                const light = document.createElement('div');
+                light.classList.add('christmas-light');
+                
+                // Random color (orange, christmas red, christmas green)
+                const colors = ['#F97316', '#DC2626', '#059669'];
+                const color = colors[Math.floor(Math.random() * colors.length)];
+                light.style.background = color;
+                
+                // Random animation delay
+                light.style.animationDelay = `${Math.random() * 2}s`;
+                
+                lightsContainer.appendChild(light);
             }
         }
         
@@ -1481,8 +1381,10 @@
                 loadingScreen.style.opacity = '0';
                 loadingScreen.style.visibility = 'hidden';
                 
-                // Create particles after loading
-                createParticles();
+                // Create Christmas effects after loading
+                createSnowfall();
+                createChristmasLights();
+                
             }, 1500);
         });
         
@@ -1492,20 +1394,13 @@
             if (loadingScreen && loadingScreen.style.opacity === '') {
                 loadingScreen.style.opacity = '0';
                 loadingScreen.style.visibility = 'hidden';
-                createParticles();
+                createSnowfall();
+                createChristmasLights();
             }
         }, 3000);
         
-        // Glitch effect on logo hover
-        document.querySelectorAll('.logo-container').forEach(container => {
-            container.addEventListener('mouseenter', () => {
-                container.style.animation = 'glitch 0.3s ease-in-out';
-            });
-            
-            container.addEventListener('mouseleave', () => {
-                container.style.animation = '';
-            });
-        });
+        // Recreate lights on resize
+        window.addEventListener('resize', createChristmasLights);
         
         // Animate stats counters
         function animateCounter(element, target) {
@@ -1548,7 +1443,6 @@
         document.querySelectorAll('a.cyber-button, a.neon-button').forEach(button => {
             button.addEventListener('click', function(e) {
                 console.log('Button clicked:', this.href);
-                // Không cần e.preventDefault() vì đây là link thật
             });
         });
     </script>
